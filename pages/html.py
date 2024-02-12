@@ -5,97 +5,153 @@ import dash_bootstrap_components as dbc
 from dash_resizable_panels import PanelGroup, Panel, PanelResizeHandle
 import dash
 from dash_iconify import DashIconify
-from pages.html.a import a_simulator_navbar, a_navbar, a_showcase, a_example_code, a_attributes
-from pages.html.marque import marque_navbar, marque_simulator_navbar, marque_showcase, marque_example_code, marque_attributes
-from pages.html.address import global_attributes, address_navbar, address_simulator_navbar, address_showcase, address_example_code
-from pages.html.abbr import abbr_simulator_navbar, abbr_navbar, abbr_showcase, abbr_example_code
+from pages.html.a import (
+    a_simulator_navbar,
+    a_navbar,
+    a_showcase,
+    a_example_code,
+    a_attributes,
+)
+from pages.html.marque import (
+    marque_navbar,
+    marque_simulator_navbar,
+    marque_showcase,
+    marque_example_code,
+    marque_attributes,
+)
+from pages.html.address import (
+    global_attributes,
+    address_navbar,
+    address_simulator_navbar,
+    address_showcase,
+    address_example_code,
+)
+from pages.html.abbr import (
+    abbr_simulator_navbar,
+    abbr_navbar,
+    abbr_showcase,
+    abbr_example_code,
+)
 
 dash.register_page(__name__, path="/")
 
-layout = html.Div([
-    dbc.Row([
-        dmc.Tabs(
+layout = html.Div(
+    [
+        dbc.Row(
             [
-                dmc.TabsList(
+                dmc.Tabs(
                     [
-                        dmc.Tab("HTML Components", value="html"),
-                        dmc.Tab("Dash Bootstrap Components", value="dbc"),
-                        dmc.Tab("Dash Mantine Components", value="dmc"),
-                    ]
-                ),
-                dmc.TabsPanel(html.Div(
-                    dbc.Row(
-                        [
-                            dbc.Col(PanelGroup(
-                                            id='panel-group-1',
-                                            children=[
-                                                Panel(
-                                                    id='panel-1',
-                                                    children=[
-                                                        marque_simulator_navbar,
-                                                        dmc.Space(h=10),
-
-                                                    ],
-                                                ),
-                                                PanelResizeHandle(html.Div(
-                                                    style={"backgroundColor": "grey", "height": "100%",
-                                                           "width": "5px"})),
-                                                Panel(
-                                                    id='panel-2',
-                                                    children=[a_simulator_navbar],
-                                                ),
-                                                PanelResizeHandle(html.Div(
-                                                    style={"backgroundColor": "grey", "height": "100%",
-                                                           "width": "5px"})),
-                                                Panel(
-                                                    id='panel-3',
-                                                    children=[
+                        dmc.TabsList(
+                            [
+                                dmc.Tab("HTML Components", value="html"),
+                                dmc.Tab("Dash Bootstrap Components", value="dbc"),
+                                dmc.Tab("Dash Mantine Components", value="dmc"),
+                            ]
+                        ),
+                        dmc.TabsPanel(
+                            html.Div(
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            PanelGroup(
+                                                id="panel-group-1",
+                                                children=[
+                                                    Panel(
+                                                        id="panel-1",
+                                                        children=[
+                                                            marque_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                        ],
+                                                    ),
+                                                    PanelResizeHandle(
+                                                        html.Div(
+                                                            style={
+                                                                "backgroundColor": "grey",
+                                                                "height": "100%",
+                                                                "width": "5px",
+                                                            }
+                                                        )
+                                                    ),
+                                                    Panel(
+                                                        id="panel-2",
+                                                        children=[a_simulator_navbar],
+                                                    ),
+                                                    PanelResizeHandle(
+                                                        html.Div(
+                                                            style={
+                                                                "backgroundColor": "grey",
+                                                                "height": "100%",
+                                                                "width": "5px",
+                                                            }
+                                                        )
+                                                    ),
+                                                    Panel(
+                                                        id="panel-3",
+                                                        children=[
                                                             abbr_simulator_navbar
                                                         ],
-                                                ),
-                                                PanelResizeHandle(html.Div(
-                                                    style={"backgroundColor": "grey", "height": "100%",
-                                                           "width": "5px"})),
-                                                Panel(
-                                                    id='panel-4',
-                                                    children=[address_simulator_navbar],
-                                                )
-
-                                            ],
-                                            direction='horizontal'
-                                        ),sm=12),
-
-                        ]
-                    )
-
-                ), value="html"),
-                dmc.TabsPanel("Dash bootstrap output", value="dbc"),
-                dmc.TabsPanel("dash mantine components", value="dmc"),
-            ],
-            color="red",
-            orientation="outline",
-            value='html'
+                                                    ),
+                                                    PanelResizeHandle(
+                                                        html.Div(
+                                                            style={
+                                                                "backgroundColor": "grey",
+                                                                "height": "100%",
+                                                                "width": "5px",
+                                                            }
+                                                        )
+                                                    ),
+                                                    Panel(
+                                                        id="panel-4",
+                                                        children=[
+                                                            address_simulator_navbar
+                                                        ],
+                                                    ),
+                                                ],
+                                                direction="horizontal",
+                                            ),
+                                            sm=12,
+                                        ),
+                                    ]
+                                )
+                            ),
+                            value="html",
+                        ),
+                        dmc.TabsPanel("Dash bootstrap output", value="dbc"),
+                        dmc.TabsPanel("dash mantine components", value="dmc"),
+                    ],
+                    color="red",
+                    orientation="outline",
+                    value="html",
+                )
+            ]
         )
-    ])
-])
+    ]
+)
+
 
 # Card Marquee Simulator
 @dash.callback(
     Output("marquee-text", "style"),
     [Input("start-btn", "n_clicks"), Input("stop-btn", "n_clicks")],
-    [State("direction-select", "value"),
-     State("scroll-amount", "value"),
-     State("scroll-delay", "value"),
-     State("true-speed-switch", "checked")],
-    prevent_initial_call=True
+    [
+        State("direction-select", "value"),
+        State("scroll-amount", "value"),
+        State("scroll-delay", "value"),
+        State("true-speed-switch", "checked"),
+    ],
+    prevent_initial_call=True,
 )
-def update_marquee_style(start_n_clicks, stop_n_clicks, direction, scroll_amount, scroll_delay, true_speed):
+def update_marquee_style(
+    start_n_clicks, stop_n_clicks, direction, scroll_amount, scroll_delay, true_speed
+):
     ctx = dash.callback_context
-    if not ctx.triggered or ctx.triggered[0]['prop_id'] == 'stop-btn.n_clicks':
+    if not ctx.triggered or ctx.triggered[0]["prop_id"] == "stop-btn.n_clicks":
         return {"animation": "none"}
 
     animation_direction = "normal" if direction in ["left", "up"] else "reverse"
-    animation_name = "scrollHorizontal" if direction in ["left", "right"] else "scrollVertical"
+    animation_name = (
+        "scrollHorizontal" if direction in ["left", "right"] else "scrollVertical"
+    )
     # Ensure true_speed and scroll_delay are respected
     scroll_delay = max(scroll_delay, 60) if true_speed else scroll_delay
     animation_duration = f"{scroll_delay / max(1, scroll_amount)}s"
@@ -104,139 +160,159 @@ def update_marquee_style(start_n_clicks, stop_n_clicks, direction, scroll_amount
         "animation": f"{animation_name} {animation_duration} linear infinite",
         "animationDirection": animation_direction,
         "whiteSpace": "nowrap",
-        "fontSize": "27px"
+        "fontSize": "27px",
     }
+
 
 # Card Marquee html.marquee Simulator Code
 @dash.callback(
-    Output('card_display_marque', 'children'),
-    Input('card_marque_simulator', 'n_clicks'),
-    Input('card_marque_showcase', 'n_clicks'),
-    Input('card_marque_simulator_code', 'n_clicks'),
-    Input('card_marque_attributes', 'n_clicks')
+    Output("card_display_marque", "children"),
+    Input("card_marque_simulator", "n_clicks"),
+    Input("card_marque_showcase", "n_clicks"),
+    Input("card_marque_simulator_code", "n_clicks"),
+    Input("card_marque_attributes", "n_clicks"),
 )
-def return_markque_simulator_code(card_marque_simulator, card_marque_showcase,
-                                  card_marque_simulator_code, card_marque_attributes):
+def return_markque_simulator_code(
+    card_marque_simulator,
+    card_marque_showcase,
+    card_marque_simulator_code,
+    card_marque_attributes,
+):
     if card_marque_simulator % 2 == 0:
         return marque_simulator_navbar
     elif card_marque_showcase % 2 == 0:
-        return html.Div([
-            marque_navbar,
-            html.Marquee(html.H1('🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊⛵🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊'),
-                         style={}),
-            marque_showcase
-        ], style={'margin': 0,
-            'padding': 0}, id='card_display_marque')
+        return html.Div(
+            [
+                marque_navbar,
+                html.Marquee(
+                    html.H1("🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊⛵🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊"),
+                    style={},
+                ),
+                marque_showcase,
+            ],
+            style={"margin": 0, "padding": 0},
+            id="card_display_marque",
+        )
     elif card_marque_simulator_code % 2 == 0:
-        return html.Div([
-            marque_navbar,
-            marque_example_code
-        ], style={'margin': 0,
-            'padding': 0}, id='card_display_marque')
+        return html.Div(
+            [marque_navbar, marque_example_code],
+            style={"margin": 0, "padding": 0},
+            id="card_display_marque",
+        )
     elif card_marque_attributes % 2 == 0:
-        return html.Div([
-            marque_navbar,
-            marque_attributes
-        ], id='card_display_marque')
+        return html.Div([marque_navbar, marque_attributes], id="card_display_marque")
     else:
         return dash.no_update
 
+
 # Card A html.A Simulator Code
 @dash.callback(
-    Output('card_display_a', 'children'),
-    Input('card_a_simulator', 'n_clicks'),
-    Input('card_a_showcase', 'n_clicks'),
-    Input('card_a_simulator_code', 'n_clicks'),
-    Input('card_a_attributes', 'n_clicks')
+    Output("card_display_a", "children"),
+    Input("card_a_simulator", "n_clicks"),
+    Input("card_a_showcase", "n_clicks"),
+    Input("card_a_simulator_code", "n_clicks"),
+    Input("card_a_attributes", "n_clicks"),
 )
-def return_a_simulator_code(card_a_simulator, card_a_showcase,
-                                  card_a_simulator_code, card_a_attributes):
+def return_a_simulator_code(
+    card_a_simulator, card_a_showcase, card_a_simulator_code, card_a_attributes
+):
 
     if card_a_simulator % 2 == 0:
         return a_simulator_navbar
     elif card_a_showcase % 2 == 0:
         return a_showcase
     elif card_a_simulator_code % 2 == 0:
-        return html.Div([
-            a_navbar,
-            a_example_code
-        ], style={'margin': 0,
-                  'padding': 0}, id='card_display_a')
+        return html.Div(
+            [a_navbar, a_example_code],
+            style={"margin": 0, "padding": 0},
+            id="card_display_a",
+        )
     elif card_a_attributes % 2 == 0:
-        return html.Div([
-            a_navbar,
-            a_attributes
-        ], id='card_display_a')
+        return html.Div([a_navbar, a_attributes], id="card_display_a")
     else:
         return dash.no_update
 
+
 # Card abbr html.Abbr Simulator Code
 @dash.callback(
-    Output('card_display_abbr', 'children'),
-    Input('card_abbr_simulator', 'n_clicks'),
-    Input('card_abbr_showcase', 'n_clicks'),
-    Input('card_abbr_simulator_code', 'n_clicks'),
-    Input('card_abbr_attributes', 'n_clicks')
+    Output("card_display_abbr", "children"),
+    Input("card_abbr_simulator", "n_clicks"),
+    Input("card_abbr_showcase", "n_clicks"),
+    Input("card_abbr_simulator_code", "n_clicks"),
+    Input("card_abbr_attributes", "n_clicks"),
 )
-def return_abbr_simulator_code(card_abbr_simulator, card_abbr_showcase,
-                            card_abbr_simulator_code, card_abbr_attributes):
+def return_abbr_simulator_code(
+    card_abbr_simulator,
+    card_abbr_showcase,
+    card_abbr_simulator_code,
+    card_abbr_attributes,
+):
 
     if card_abbr_simulator % 2 == 0:
         return abbr_simulator_navbar
     elif card_abbr_showcase % 2 == 0:
-        return html.Div([
-            abbr_navbar,
-            abbr_showcase
-        ], style={'margin': 0,
-                  'padding': 0}, id='card_display_abbr')
+        return html.Div(
+            [abbr_navbar, abbr_showcase],
+            style={"margin": 0, "padding": 0},
+            id="card_display_abbr",
+        )
     elif card_abbr_simulator_code % 2 == 0:
-        return html.Div([
-            abbr_navbar,
-            abbr_example_code
-            # example_code
-        ], style={'margin': 0,
-                  'padding': 0}, id='card_display_abbr')
+        return html.Div(
+            [
+                abbr_navbar,
+                abbr_example_code,
+                # example_code
+            ],
+            style={"margin": 0, "padding": 0},
+            id="card_display_abbr",
+        )
     elif card_abbr_attributes % 2 == 0:
-        return html.Div([
-            abbr_navbar,
-            global_attributes
-        ], id='card_display_abbr')
+        return html.Div([abbr_navbar, global_attributes], id="card_display_abbr")
     else:
         return dash.no_update
 
+
 # Card address html.Address Simulator Code
 @dash.callback(
-    Output('card_display_address', 'children'),
-    Input('card_address_simulator', 'n_clicks'),
-    Input('card_address_showcase', 'n_clicks'),
-    Input('card_address_simulator_code', 'n_clicks'),
-    Input('card_address_attributes', 'n_clicks')
+    Output("card_display_address", "children"),
+    Input("card_address_simulator", "n_clicks"),
+    Input("card_address_showcase", "n_clicks"),
+    Input("card_address_simulator_code", "n_clicks"),
+    Input("card_address_attributes", "n_clicks"),
 )
-def return_address_simulator_code(card_address_simulator, card_address_showcase,
-                            card_address_simulator_code, card_address_attributes):
+def return_address_simulator_code(
+    card_address_simulator,
+    card_address_showcase,
+    card_address_simulator_code,
+    card_address_attributes,
+):
     if card_address_simulator % 2 == 0:
         return address_simulator_navbar
     elif card_address_showcase % 2 == 0:
-        return html.Div([
-            address_navbar,
-            address_showcase
-            # example_code
-        ], style={'margin': 0,
-                  'padding': 0}, id='card_display_address')
+        return html.Div(
+            [
+                address_navbar,
+                address_showcase,
+                # example_code
+            ],
+            style={"margin": 0, "padding": 0},
+            id="card_display_address",
+        )
     elif card_address_simulator_code % 2 == 0:
-        return html.Div([
-            address_navbar,
-            address_example_code
-            # example_code
-        ], style={'margin': 0,
-                  'padding': 0}, id='card_display_address')
+        return html.Div(
+            [
+                address_navbar,
+                address_example_code,
+                # example_code
+            ],
+            style={"margin": 0, "padding": 0},
+            id="card_display_address",
+        )
     elif card_address_attributes % 2 == 0:
-        return html.Div([
-            address_navbar,
-            global_attributes
-        ], id='card_display_address')
+        return html.Div([address_navbar, global_attributes], id="card_display_address")
     else:
         return dash.no_update
+
 
 # Card area html.Area Simulator Code
 

@@ -4,157 +4,246 @@ from dash_iconify import DashIconify
 
 # Base Navbar
 address_navbar = dmc.MantineProvider(
-        theme={"colorScheme": "dark"},
-        children=[dmc.Paper([
-            dmc.Space(h=10),
-            dmc.Group([
-                dmc.Tooltip(
-                    label="Simulator",
-                    position="bottom",
-                    offset=3,
-                    children=[dmc.ActionIcon(
-                        DashIconify(icon="logos:python", width=30, ), variant='transparent',
-                        id='card_address_simulator', n_clicks=1,
-                    )]
+    theme={"colorScheme": "dark"},
+    children=[
+        dmc.Paper(
+            [
+                dmc.Space(h=10),
+                dmc.Group(
+                    [
+                        dmc.Tooltip(
+                            label="Simulator",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="logos:python",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    id="card_address_simulator",
+                                    n_clicks=1,
+                                )
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Showcase",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="streamline-emojis:open-book",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    id="card_address_showcase",
+                                    n_clicks=1,
+                                ),
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Example Code",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="vscode-icons:folder-type-python-opened",
+                                        width=30,
+                                    ),
+                                    color="gray",
+                                    n_clicks=1,
+                                    variant="transparent",
+                                    id="card_address_simulator_code",
+                                ),
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Attributes",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="vscode-icons:file-type-poedit",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    n_clicks=1,
+                                    id="card_address_attributes",
+                                ),
+                            ],
+                        ),
+                    ],
+                    position="center",
                 ),
-                dmc.Tooltip(
-                    label="Showcase",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="streamline-emojis:open-book", width=30, ),
-                            variant='transparent', id='card_address_showcase', n_clicks=1,
-                        ),
-                    ]),
-                dmc.Tooltip(
-                    label="Example Code",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="vscode-icons:folder-type-python-opened", width=30, ), color="gray",
-                            n_clicks=1,
-                            variant='transparent', id='card_address_simulator_code'
-                        ),
-                    ]),
-                dmc.Tooltip(
-                    label="Attributes",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="vscode-icons:file-type-poedit", width=30, ), variant='transparent',
-                            n_clicks=1,
-                            id='card_address_attributes'
-                        ),
-                    ])
-            ], position='center'),
-            html.Hr(),
-        ], style={'margin': 0,
-                  'padding': 0})])
-
+                html.Hr(),
+            ],
+            style={"margin": 0, "padding": 0},
+        )
+    ],
+)
 
 
 address_simulator_navbar = html.Div(
-                                                        # Simulator
-                                                        dmc.MantineProvider(
-                                                            theme={"colorScheme": "dark"},
-                                                            children=[
-                                                                dmc.Paper([
-                                                                    dmc.Space(h=10),
-                                                                           dmc.Group([
-                                                                                        dmc.Tooltip(
-                                                                                            label="Simulator",
-                                                                                            position="bottom",
-                                                                                            offset=3,
-                                                                                            children=[dmc.ActionIcon(
-                                                                                            DashIconify(icon="logos:python", width=30,), variant='transparent', id='card_address_simulator', n_clicks=1,
-                                                                                        )]
-                                                                                        ),
-                                                                                dmc.Tooltip(
-                                                                                   label="Showcase",
-                                                                                   position="bottom",
-                                                                                   offset=3,
-                                                                                   children=[
-                                                                                       dmc.ActionIcon(
-                                                                                            DashIconify(icon="streamline-emojis:open-book", width=30,), color="blue", variant='transparent', id='card_address_showcase', n_clicks=1,
-                                                                                        ),
-                                                                                       ]),
-                                                                               dmc.Tooltip(
-                                                                                   label="Example Code",
-                                                                                   position="bottom",
-                                                                                   offset=3,
-                                                                                   children=[
-                                                                                       dmc.ActionIcon(
-                                                                                            DashIconify(icon="vscode-icons:folder-type-python-opened", width=30,), color="blue", variant='transparent', id='card_address_simulator_code', n_clicks=1,
-                                                                                        ),
-                                                                                       ]),
-                                                                                dmc.Tooltip(
-                                                                                            label="Attributes",
-                                                                                            position="bottom",
-                                                                                            offset=3,
-                                                                                            children=[
-                                                                                        dmc.ActionIcon(
-                                                                                            DashIconify(icon="vscode-icons:file-type-poedit", width=30,),  variant='transparent', id='card_address_attributes', n_clicks=1,
-                                                                                        ),
-                                                                                                ])
-                                                                                      ], position='center'),
-                                                                html.Hr(),
-                                                                           html.Div([
-                                                                               dmc.Container([
-                                                                                   html.Div([
-                                                                                       dmc.Title(
-                                                                                           "<address>: The Contact Address element", style={'font-size': '26px'}),
-                                                                                       html.P([
-                                                                                           "The ",
-                                                                                           html.Code("html.Address()"),
-                                                                                           " component in Dash is used to mark up contact information or an address. ",
-                                                                                           "This can include any form of contact information, such as physical addresses, URLs, email addresses, phone numbers, or even social media handles."
-                                                                                       ]),
-                                                                                       html.H2(
-                                                                                           "Example of html.Address"),
-                                                                                       html.Address([
-                                                                                           "Author Name", html.Br(),
-                                                                                           "123 Example Street",
-                                                                                           html.Br(),
-                                                                                           "City, State, 12345",
-                                                                                           html.Br(),
-                                                                                           "Email: ",
-                                                                                           html.A("author@example.com",
-                                                                                                  href="mailto:author@example.com"),
-                                                                                           html.Br(),
-                                                                                           "Phone: ",
-                                                                                           html.A("+1234567890",
-                                                                                                  href="tel:+1234567890")
-                                                                                       ])
-                                                                                   ])
+    # Simulator
+    dmc.MantineProvider(
+        theme={"colorScheme": "dark"},
+        children=[
+            dmc.Paper(
+                [
+                    dmc.Space(h=10),
+                    dmc.Group(
+                        [
+                            dmc.Tooltip(
+                                label="Simulator",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="logos:python",
+                                            width=30,
+                                        ),
+                                        variant="transparent",
+                                        id="card_address_simulator",
+                                        n_clicks=1,
+                                    )
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Showcase",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="streamline-emojis:open-book",
+                                            width=30,
+                                        ),
+                                        color="blue",
+                                        variant="transparent",
+                                        id="card_address_showcase",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Example Code",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="vscode-icons:folder-type-python-opened",
+                                            width=30,
+                                        ),
+                                        color="blue",
+                                        variant="transparent",
+                                        id="card_address_simulator_code",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Attributes",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="vscode-icons:file-type-poedit",
+                                            width=30,
+                                        ),
+                                        variant="transparent",
+                                        id="card_address_attributes",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                        ],
+                        position="center",
+                    ),
+                    html.Hr(),
+                    html.Div(
+                        [
+                            dmc.Container(
+                                [
+                                    html.Div(
+                                        [
+                                            dmc.Title(
+                                                "<address>: The Contact Address element",
+                                                style={"font-size": "26px"},
+                                            ),
+                                            html.P(
+                                                [
+                                                    "The ",
+                                                    html.Code("html.Address()"),
+                                                    " component in Dash is used to mark up contact information or an address. ",
+                                                    "This can include any form of contact information, such as physical addresses, URLs, email addresses, phone numbers, or even social media handles.",
+                                                ]
+                                            ),
+                                            html.H2("Example of html.Address"),
+                                            html.Address(
+                                                [
+                                                    "Author Name",
+                                                    html.Br(),
+                                                    "123 Example Street",
+                                                    html.Br(),
+                                                    "City, State, 12345",
+                                                    html.Br(),
+                                                    "Email: ",
+                                                    html.A(
+                                                        "author@example.com",
+                                                        href="mailto:author@example.com",
+                                                    ),
+                                                    html.Br(),
+                                                    "Phone: ",
+                                                    html.A(
+                                                        "+1234567890",
+                                                        href="tel:+1234567890",
+                                                    ),
+                                                ]
+                                            ),
+                                        ]
+                                    )
+                                ]
+                            )
+                        ],
+                        style={
+                            "padding": "20px",
+                            "height": "60vh",
+                            "overflow-y": "scroll",
+                        },
+                    ),
+                ]
+            ),
+        ],
+    ),
+    id="card_display_address",
+)
 
-                                                                               ])
-                                                                           ], style={"padding": "20px", 'height': '60vh',
-           'overflow-y': 'scroll'})
-                                                                           ]),
-
-                                                            ])
-                                                        , id='card_display_address')
-
-address_showcase = html.Div([
-html.Address([
-                                                                                           "Author Name", html.Br(),
-                                                                                           "123 Example Street",
-                                                                                           html.Br(),
-                                                                                           "City, State, 12345",
-                                                                                           html.Br(),
-                                                                                           "Email: ",
-                                                                                           html.A("author@example.com",
-                                                                                                  href="mailto:author@example.com"),
-                                                                                           html.Br(),
-                                                                                           "Phone: ",
-                                                                                           html.A("+1234567890",
-                                                                                                  href="tel:+1234567890")
-                                                                                       ]),
-    dmc.Prism(
-        """from dash import html
+address_showcase = html.Div(
+    [
+        html.Address(
+            [
+                "Author Name",
+                html.Br(),
+                "123 Example Street",
+                html.Br(),
+                "City, State, 12345",
+                html.Br(),
+                "Email: ",
+                html.A("author@example.com", href="mailto:author@example.com"),
+                html.Br(),
+                "Phone: ",
+                html.A("+1234567890", href="tel:+1234567890"),
+            ]
+        ),
+        dmc.Prism(
+            """from dash import html
 
 html.Address([
    "Author Name", html.Br(),
@@ -170,21 +259,24 @@ html.Address([
    html.A("+1234567890",
           href="tel:+1234567890")
 ])""",
-        language="python",
-        colorScheme="dark",
-    ), ],
-    style={'margin': 0,
-           'padding': 0,
-           'position': 'relative',
-           'top': -20,
-           'height': '60vh',
-           'overflow-y': 'scroll'
-           },
+            language="python",
+            colorScheme="dark",
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
 )
 
-address_example_code = html.Div([
-    dmc.Prism(
-        """
+address_example_code = html.Div(
+    [
+        dmc.Prism(
+            """
 from dash import html
 
 html.Div([
@@ -216,21 +308,24 @@ html.Div([
        ])
 ], style={"padding": "20px"})
         """,
-        language="python",
-        colorScheme="dark",
-    ), ],
-    style={'margin': 0,
-           'padding': 0,
-           'position': 'relative',
-           'top': -20,
-           'height': '60vh',
-           'overflow-y': 'scroll'
-           },
+            language="python",
+            colorScheme="dark",
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
 )
 
-global_attributes = html.Div([
-    dmc.Prism(
-        """
+global_attributes = html.Div(
+    [
+        dmc.Prism(
+            """
 Global Attributes                
 
 'accesskey':
@@ -384,14 +479,16 @@ mobile phones, or other devices where a hardware keyboard may not be available f
 - auto or an empty string, which automatically shows the virtual keyboard when the element is focused or tapped.
 - manual, which decouples focus and tap on the element from the virtual keyboard's state. */ 
 """,
-        language="css",
-        colorScheme="dark",
-    ), ],
-    style={'margin': 0,
-           'padding': 0,
-           'position': 'relative',
-           'top': -20,
-           'height': '60vh',
-           'overflow-y': 'scroll'
-           },
+            language="css",
+            colorScheme="dark",
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
 )

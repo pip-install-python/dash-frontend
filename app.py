@@ -19,8 +19,7 @@ app = Dash(
         "https://use.fontawesome.com/releases/v6.2.1/css/all.css",
         dbc.themes.SKETCHY,
     ],
-    external_scripts=[
-    ],
+    external_scripts=[],
     # plugins=[dash_labs.plugins.pages],
     use_pages=True,
     server=server,
@@ -117,7 +116,10 @@ navbar = html.Div(
         gutter="sm",
     ),
     id="dynamic-navbar",
-    style={"z-index": "26", 'background': 'linear-gradient(to bottom, #ecf0f1 0%, #515960 100%)'},
+    style={
+        "z-index": "26",
+        "background": "linear-gradient(to bottom, #ecf0f1 0%, #515960 100%)",
+    },
 )
 
 
@@ -210,7 +212,7 @@ app.layout = html.Div(
 )
 
 
-@app.callback(Output("dynamic-navbar", "children"), [Input('auth-store', 'data')])
+@app.callback(Output("dynamic-navbar", "children"), [Input("auth-store", "data")])
 def dynamic_navbar(data):
     if data:
         return dmc.Grid(
@@ -245,15 +247,11 @@ def dynamic_navbar(data):
                                                 href="/profile",
                                                 children=["Profile"],
                                             ),
-                                            icon=DashIconify(
-                                                icon="icon-park:avatar"
-                                            ),
+                                            icon=DashIconify(icon="icon-park:avatar"),
                                         ),
                                         dmc.MenuDivider(),
                                         dmc.MenuItem(
-                                            html.A(
-                                                href="/about", children=["About"]
-                                            )
+                                            html.A(href="/about", children=["About"])
                                         ),
                                         # account-menu-dropdown is being called to change the above to a logged in vs logged out state
                                     ],
@@ -326,9 +324,7 @@ def dynamic_navbar(data):
                                             ),
                                         ),
                                         dmc.MenuDivider(),
-                                        dmc.MenuItem(
-                                            href="/about", children=["About"]
-                                        ),
+                                        dmc.MenuItem(href="/about", children=["About"]),
                                         # account-menu-dropdown is being called to change the above to a logged in vs logged out state
                                     ],
                                     id="render-navbar-based-on-logged-in-status",
@@ -400,18 +396,21 @@ def open(b_opened):
                             href="/trade_route",
                             children=[
                                 dmc.ActionIcon(
-                                    DashIconify(icon="openmoji:location-indicator-red", width=50),
+                                    DashIconify(
+                                        icon="openmoji:location-indicator-red", width=50
+                                    ),
                                     size=55,
                                     variant="transparent",
                                 )
                             ],
                         ),
-
                         html.A(
                             href="/updates",
                             children=[
                                 html.Center(
-                                    DashIconify(icon="noto:globe-showing-americas", width=45)
+                                    DashIconify(
+                                        icon="noto:globe-showing-americas", width=45
+                                    )
                                 )
                             ],
                         ),
@@ -419,8 +418,9 @@ def open(b_opened):
                     position="center",
                 ),
             ],
-            style={'background': 'linear-gradient(to bottom, #515960 0%, #ecf0f1 100%)'
-},
+            style={
+                "background": "linear-gradient(to bottom, #515960 0%, #ecf0f1 100%)"
+            },
         )
     else:
         pass

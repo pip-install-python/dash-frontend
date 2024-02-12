@@ -5,179 +5,293 @@ import dash_bootstrap_components as dbc
 
 # Base Navbar
 abbr_navbar = dmc.MantineProvider(
-        theme={"colorScheme": "dark"},
-        children=[dmc.Paper([
-            dmc.Space(h=10),
-            dmc.Group([
-                dmc.Tooltip(
-                    label="Simulator",
-                    position="bottom",
-                    offset=3,
-                    children=[dmc.ActionIcon(
-                        DashIconify(icon="logos:python", width=30, ), variant='transparent',
-                        id='card_abbr_simulator', n_clicks=1,
-                    )]
+    theme={"colorScheme": "dark"},
+    children=[
+        dmc.Paper(
+            [
+                dmc.Space(h=10),
+                dmc.Group(
+                    [
+                        dmc.Tooltip(
+                            label="Simulator",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="logos:python",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    id="card_abbr_simulator",
+                                    n_clicks=1,
+                                )
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Showcase",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="streamline-emojis:open-book",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    id="card_abbr_showcase",
+                                    n_clicks=1,
+                                ),
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Example Code",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="vscode-icons:folder-type-python-opened",
+                                        width=30,
+                                    ),
+                                    color="gray",
+                                    n_clicks=1,
+                                    variant="transparent",
+                                    id="card_abbr_simulator_code",
+                                ),
+                            ],
+                        ),
+                        dmc.Tooltip(
+                            label="Attributes",
+                            position="bottom",
+                            offset=3,
+                            children=[
+                                dmc.ActionIcon(
+                                    DashIconify(
+                                        icon="vscode-icons:file-type-poedit",
+                                        width=30,
+                                    ),
+                                    variant="transparent",
+                                    n_clicks=1,
+                                    id="card_abbr_attributes",
+                                ),
+                            ],
+                        ),
+                    ],
+                    position="center",
                 ),
-                dmc.Tooltip(
-                    label="Showcase",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="streamline-emojis:open-book", width=30, ),
-                            variant='transparent', id='card_abbr_showcase', n_clicks=1,
-                        ),
-                    ]),
-                dmc.Tooltip(
-                    label="Example Code",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="vscode-icons:folder-type-python-opened", width=30, ), color="gray",
-                            n_clicks=1,
-                            variant='transparent', id='card_abbr_simulator_code'
-                        ),
-                    ]),
-                dmc.Tooltip(
-                    label="Attributes",
-                    position="bottom",
-                    offset=3,
-                    children=[
-                        dmc.ActionIcon(
-                            DashIconify(icon="vscode-icons:file-type-poedit", width=30, ), variant='transparent',
-                            n_clicks=1,
-                            id='card_abbr_attributes'
-                        ),
-                    ])
-            ], position='center'),
-            html.Hr(),
-        ], style={'margin': 0,
-                  'padding': 0})])
-
+                html.Hr(),
+            ],
+            style={"margin": 0, "padding": 0},
+        )
+    ],
+)
 
 
 abbr_simulator_navbar = html.Div(
-                                                        # Simulator
-                                                        dmc.MantineProvider(
-                                                            theme={"colorScheme": "dark"},
-                                                            children=[
-                                                                dmc.Paper([
-                                                                    dmc.Space(h=10),
-                                                                           dmc.Group([
-                                                                                        dmc.Tooltip(
-                                                                                            label="Simulator",
-                                                                                            position="bottom",
-                                                                                            offset=3,
-                                                                                            children=[dmc.ActionIcon(
-                                                                                            DashIconify(icon="logos:python", width=30,), variant='transparent', id='card_abbr_simulator', n_clicks=1,
-                                                                                        )]
-                                                                                        ),
-                                                                                dmc.Tooltip(
-                                                                                   label="Showcase",
-                                                                                   position="bottom",
-                                                                                   offset=3,
-                                                                                   children=[
-                                                                                       dmc.ActionIcon(
-                                                                                            DashIconify(icon="streamline-emojis:open-book", width=30,), color="blue", variant='transparent', id='card_abbr_showcase', n_clicks=1,
-                                                                                        ),
-                                                                                       ]),
-                                                                               dmc.Tooltip(
-                                                                                   label="Example Code",
-                                                                                   position="bottom",
-                                                                                   offset=3,
-                                                                                   children=[
-                                                                                       dmc.ActionIcon(
-                                                                                            DashIconify(icon="vscode-icons:folder-type-python-opened", width=30,), color="blue", variant='transparent', id='card_abbr_simulator_code', n_clicks=1,
-                                                                                        ),
-                                                                                       ]),
-                                                                                dmc.Tooltip(
-                                                                                            label="Attributes",
-                                                                                            position="bottom",
-                                                                                            offset=3,
-                                                                                            children=[
-                                                                                        dmc.ActionIcon(
-                                                                                            DashIconify(icon="vscode-icons:file-type-poedit", width=30,),  variant='transparent', id='card_abbr_attributes', n_clicks=1,
-                                                                                        ),
-                                                                                                ])
-                                                                                      ], position='center'),
-                                                                html.Hr(),
-                                                                           html.Div([
-                                                                               dmc.Container([
-                                                                                   html.Div([
-                                                                                       dmc.Title(["Understanding the HTML ", html.Abbr("<abbr>"), " Element"], style={'font-size': '26px'}),
-                                                                                       html.P([
-                                                                                           "The ", html.Abbr("<abbr>"),
-                                                                                           " HTML element represents an abbreviation or acronym.",
-                                                                                           " When including an abbreviation or acronym, it's recommended to provide a full expansion of the term in plain text on first use, ",
-                                                                                           "along with the ",
-                                                                                           html.Abbr("<abbr>"),
-                                                                                           " to mark up the abbreviation. This informs the user what the abbreviation or acronym means."
-                                                                                       ]),
-                                                                                       html.Br(),
-                                                                                       html.P(["html.Abbr(\"text\"): ", html.Abbr("title")]),
-                                                                                       html.Br(),
-                                                                                       html.P(["The optional html.Code(\"text\"): ", html.Code("text")]),
-                                                                                       html.Br(),
-                                                                                       html.P([
-                                                                                           " When it comes to dash html.Abbr doesn't provide as much as a text definer and only has the global attributes.",
-                                                                                           html.Code("text"),
-                                                                                           " must contain this full description and nothing else."
-                                                                                       ]),
-                                                                                   ])
+    # Simulator
+    dmc.MantineProvider(
+        theme={"colorScheme": "dark"},
+        children=[
+            dmc.Paper(
+                [
+                    dmc.Space(h=10),
+                    dmc.Group(
+                        [
+                            dmc.Tooltip(
+                                label="Simulator",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="logos:python",
+                                            width=30,
+                                        ),
+                                        variant="transparent",
+                                        id="card_abbr_simulator",
+                                        n_clicks=1,
+                                    )
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Showcase",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="streamline-emojis:open-book",
+                                            width=30,
+                                        ),
+                                        color="blue",
+                                        variant="transparent",
+                                        id="card_abbr_showcase",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Example Code",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="vscode-icons:folder-type-python-opened",
+                                            width=30,
+                                        ),
+                                        color="blue",
+                                        variant="transparent",
+                                        id="card_abbr_simulator_code",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                            dmc.Tooltip(
+                                label="Attributes",
+                                position="bottom",
+                                offset=3,
+                                children=[
+                                    dmc.ActionIcon(
+                                        DashIconify(
+                                            icon="vscode-icons:file-type-poedit",
+                                            width=30,
+                                        ),
+                                        variant="transparent",
+                                        id="card_abbr_attributes",
+                                        n_clicks=1,
+                                    ),
+                                ],
+                            ),
+                        ],
+                        position="center",
+                    ),
+                    html.Hr(),
+                    html.Div(
+                        [
+                            dmc.Container(
+                                [
+                                    html.Div(
+                                        [
+                                            dmc.Title(
+                                                [
+                                                    "Understanding the HTML ",
+                                                    html.Abbr("<abbr>"),
+                                                    " Element",
+                                                ],
+                                                style={"font-size": "26px"},
+                                            ),
+                                            html.P(
+                                                [
+                                                    "The ",
+                                                    html.Abbr("<abbr>"),
+                                                    " HTML element represents an abbreviation or acronym.",
+                                                    " When including an abbreviation or acronym, it's recommended to provide a full expansion of the term in plain text on first use, ",
+                                                    "along with the ",
+                                                    html.Abbr("<abbr>"),
+                                                    " to mark up the abbreviation. This informs the user what the abbreviation or acronym means.",
+                                                ]
+                                            ),
+                                            html.Br(),
+                                            html.P(
+                                                [
+                                                    'html.Abbr("text"): ',
+                                                    html.Abbr("title"),
+                                                ]
+                                            ),
+                                            html.Br(),
+                                            html.P(
+                                                [
+                                                    'The optional html.Code("text"): ',
+                                                    html.Code("text"),
+                                                ]
+                                            ),
+                                            html.Br(),
+                                            html.P(
+                                                [
+                                                    " When it comes to dash html.Abbr doesn't provide as much as a text definer and only has the global attributes.",
+                                                    html.Code("text"),
+                                                    " must contain this full description and nothing else.",
+                                                ]
+                                            ),
+                                        ]
+                                    )
+                                ]
+                            )
+                        ],
+                        style={
+                            "padding": "20px",
+                            "height": "60vh",
+                            "overflow-y": "scroll",
+                        },
+                    ),
+                ]
+            ),
+        ],
+    ),
+    id="card_display_abbr",
+)
 
-                                                                               ])
-                                                                           ], style={"padding": "20px", 'height': '60vh',
-           'overflow-y': 'scroll'})
-                                                                           ]),
-
-                                                            ])
-                                                        , id='card_display_abbr')
-
-abbr_showcase = html.Div([
-            dmc.Prism(
-                """from dash import html
+abbr_showcase = html.Div(
+    [
+        dmc.Prism(
+            """from dash import html
 
 html.H3("An Abb Component looks like: ")
 html.Abbr('Abbr element')
 """,
-                language="python",
-                colorScheme="dark",
-            ),
-dmc.Paper(dbc.Container([
-    dmc.Title(children='<abbr>: The Abbreviation element', style={'font-weight': 700,
-    'font-size': '26px'}),
-    html.P(children=[
-        'The ',
-        html.Code('<abbr>'),
-        ' HTML element represents an abbreviation or acronym.'
-    ]),
-    html.P(children=[
-        'When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the ',
-        html.Code('<abbr>'),
-        ' to mark up the abbreviation. This informs the user what the abbreviation or acronym means.'
-    ]),
-    html.P(children=[
-        'The optional ',
-        html.Code('title'),
-        ' attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, ',
-        html.Code('title'),
-        ' must contain this full description and nothing else.'
-    ])
-]))
-],
-            style={'margin': 0,
-                   'padding': 0,
-                   'position': 'relative',
-                   'top': -20,
-                   'height': '60vh',
-                   'overflow-y': 'scroll'
-                   },
-        )
+            language="python",
+            colorScheme="dark",
+        ),
+        dmc.Paper(
+            dbc.Container(
+                [
+                    dmc.Title(
+                        children="<abbr>: The Abbreviation element",
+                        style={"font-weight": 700, "font-size": "26px"},
+                    ),
+                    html.P(
+                        children=[
+                            "The ",
+                            html.Code("<abbr>"),
+                            " HTML element represents an abbreviation or acronym.",
+                        ]
+                    ),
+                    html.P(
+                        children=[
+                            "When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the ",
+                            html.Code("<abbr>"),
+                            " to mark up the abbreviation. This informs the user what the abbreviation or acronym means.",
+                        ]
+                    ),
+                    html.P(
+                        children=[
+                            "The optional ",
+                            html.Code("title"),
+                            " attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, ",
+                            html.Code("title"),
+                            " must contain this full description and nothing else.",
+                        ]
+                    ),
+                ]
+            )
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
+)
 
-abbr_example_code = html.Div([
-            dmc.Prism(
-                """# Dash html.Abbr() Simulator
+abbr_example_code = html.Div(
+    [
+        dmc.Prism(
+            """# Dash html.Abbr() Simulator
 from dash import html
 
 html.Div([
@@ -202,21 +316,24 @@ html.P([
 ]),
 ])
 """,
-                language="python",
-                colorScheme="dark",
-            ), ],
-            style={'margin': 0,
-                   'padding': 0,
-                   'position': 'relative',
-                   'top': -20,
-                   'height': '60vh',
-                   'overflow-y': 'scroll'
-                   },
-        )
+            language="python",
+            colorScheme="dark",
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
+)
 
-global_attributes = html.Div([
-    dmc.Prism(
-        """
+global_attributes = html.Div(
+    [
+        dmc.Prism(
+            """
 Global Attributes                
 
 'accesskey':
@@ -370,14 +487,16 @@ mobile phones, or other devices where a hardware keyboard may not be available f
 - auto or an empty string, which automatically shows the virtual keyboard when the element is focused or tapped.
 - manual, which decouples focus and tap on the element from the virtual keyboard's state. */ 
 """,
-        language="css",
-        colorScheme="dark",
-    ), ],
-    style={'margin': 0,
-           'padding': 0,
-           'position': 'relative',
-           'top': -20,
-           'height': '60vh',
-           'overflow-y': 'scroll'
-           },
+            language="css",
+            colorScheme="dark",
+        ),
+    ],
+    style={
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "top": -20,
+        "height": "60vh",
+        "overflow-y": "scroll",
+    },
 )
