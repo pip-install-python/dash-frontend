@@ -6,7 +6,7 @@
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/pip-install-python)
 
-[![Project Software](https://skills.thijs.gg/icons?i=linux,django,flask,py,react,postgres,fastapi,js,html,css,)](https://community.plotly.com/t/django-dash-token-authentication/82088)
+[![Project Software](https://skills.thijs.gg/icons?i=linux,flask,py,react,js,html,css,)](https://community.plotly.com/t/django-dash-token-authentication/82088)
 
 ![Django Dash Token Authentication](assets/branding/dash-frontend.png)
 
