@@ -19,6 +19,12 @@ from pages.html.marque import (
     marque_example_code,
     marque_attributes,
 )
+from pages.html.abbr import (
+    abbr_simulator_navbar,
+    abbr_navbar,
+    abbr_showcase,
+    abbr_example_code,
+)
 from pages.html.address import (
     global_attributes,
     address_navbar,
@@ -26,12 +32,235 @@ from pages.html.address import (
     address_showcase,
     address_example_code,
 )
-from pages.html.abbr import (
-    abbr_simulator_navbar,
-    abbr_navbar,
-    abbr_showcase,
-    abbr_example_code,
+from pages.html.area import (
+    area_simulator_navbar,
+    area_navbar,
+    area_showcase,
+    area_example_code,
 )
+from pages.html.article import (
+    article_simulator_navbar,
+    article_navbar,
+    article_showcase,
+    article_example_code,
+)
+from pages.html.aside import (
+    aside_simulator_navbar,
+    aside_navbar,
+    aside_showcase,
+    aside_example_code,
+)
+from pages.html.audio import (
+    audio_simulator_navbar,
+    audio_navbar,
+    audio_showcase,
+    audio_example_code,
+)
+from pages.html.b import (
+    b_simulator_navbar,
+    b_navbar,
+    b_showcase,
+    b_example_code,
+)
+from pages.html.base import (
+    base_simulator_navbar,
+    base_navbar,
+    base_showcase,
+    base_example_code,
+)
+from pages.html.bdi import (
+    bdi_simulator_navbar,
+    bdi_navbar,
+    bdi_showcase,
+    bdi_example_code,
+)
+from pages.html.bdo import (
+    bdo_simulator_navbar,
+    bdo_navbar,
+    bdo_showcase,
+    bdo_example_code,
+)
+from pages.html.big import (
+    big_simulator_navbar,
+    big_navbar,
+    big_showcase,
+    big_example_code,
+)
+from pages.html.blockquote import (
+    blockquote_simulator_navbar,
+    blockquote_navbar,
+    blockquote_showcase,
+    blockquote_example_code,
+)
+from pages.html.br import (
+    br_simulator_navbar,
+    br_navbar,
+    br_showcase,
+    br_example_code,
+)
+from pages.html.button import (
+    button_simulator_navbar,
+    button_navbar,
+    button_showcase,
+    button_example_code,
+)
+from pages.html.canvas import (
+    canvas_simulator_navbar,
+    canvas_navbar,
+    canvas_showcase,
+    canvas_example_code,
+)
+from pages.html.caption import (
+    caption_simulator_navbar,
+    caption_navbar,
+    caption_showcase,
+    caption_example_code,
+)
+from pages.html.center import (
+    center_simulator_navbar,
+    center_navbar,
+    center_showcase,
+    center_example_code,
+)
+from pages.html.cite import (
+    cite_simulator_navbar,
+    cite_navbar,
+    cite_showcase,
+    cite_example_code,
+)
+from pages.html.code import (
+    code_simulator_navbar,
+    code_navbar,
+    code_showcase,
+    code_example_code,
+)
+from pages.html.col import (
+    col_simulator_navbar,
+    col_navbar,
+    col_showcase,
+    col_example_code,
+)
+from pages.html.colgroup import (
+    colgroup_simulator_navbar,
+    colgroup_navbar,
+    colgroup_showcase,
+    colgroup_example_code,
+)
+from pages.html.data import (
+    data_simulator_navbar,
+    data_navbar,
+    data_showcase,
+    data_example_code,
+)
+from pages.html.datalist import (
+    datalist_simulator_navbar,
+    datalist_navbar,
+    datalist_showcase,
+    datalist_example_code,
+)
+from pages.html.dd import (
+    dd_simulator_navbar,
+    dd_navbar,
+    dd_showcase,
+    dd_example_code,
+)
+from pages.html.del_ import (
+    del_simulator_navbar,
+    del_navbar,
+    del_showcase,
+    del_example_code,
+)
+from pages.html.details import (
+    details_simulator_navbar,
+    details_navbar,
+    details_showcase,
+    details_example_code,
+)
+from pages.html.dfn import (
+    dfn_simulator_navbar,
+    dfn_navbar,
+    dfn_showcase,
+    dfn_example_code,
+)
+from pages.html.dialog import (
+    dialog_simulator_navbar,
+    dialog_navbar,
+    dialog_showcase,
+    dialog_example_code,
+)
+from pages.html.dir import (
+    dir_simulator_navbar,
+    dir_navbar,
+    dir_showcase,
+    dir_example_code,
+)
+from pages.html.div import (
+    div_simulator_navbar,
+    div_navbar,
+    div_showcase,
+    div_example_code,
+)
+from pages.html.dl import (
+    dl_simulator_navbar,
+    dl_navbar,
+    dl_showcase,
+    dl_example_code,
+)
+from pages.html.dt import (
+    dt_simulator_navbar,
+    dt_navbar,
+    dt_showcase,
+    dt_example_code,
+)
+from pages.html.em import (
+    em_simulator_navbar,
+    em_navbar,
+    em_showcase,
+    em_example_code,
+)
+from pages.html.embed import (
+    embed_simulator_navbar,
+    embed_navbar,
+    embed_showcase,
+    embed_example_code,
+)
+from pages.html.fieldset import (
+    fieldset_simulator_navbar,
+    fieldset_navbar,
+    fieldset_showcase,
+    fieldset_example_code,
+)
+from pages.html.figcaption import (
+    figcaption_simulator_navbar,
+    figcaption_navbar,
+    figcaption_showcase,
+    figcaption_example_code,
+)
+from pages.html.figure import (
+    figure_simulator_navbar,
+    figure_navbar,
+    figure_showcase,
+    figure_example_code,
+)
+from pages.html.font import (
+    font_simulator_navbar,
+    font_navbar,
+    font_showcase,
+    font_example_code,
+)
+from pages.html.footer import (
+    footer_simulator_navbar,
+    footer_navbar,
+    footer_showcase,
+    footer_example_code,
+)
+from pages.html.frameset import (
+    frameset_simulator_navbar,
+    frameset_navbar,
+    frameset_showcase,
+    frameset_example_code,
+)
+
 
 dash.register_page(__name__, path="/")
 
@@ -59,8 +288,27 @@ layout = html.Div(
                                                     Panel(
                                                         id="panel-1",
                                                         children=[
-                                                            marque_simulator_navbar,
+                                                            a_simulator_navbar,
                                                             dmc.Space(h=10),
+                                                            article_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            base_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            blockquote_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            caption_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            col_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dd_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dialog_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dt_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            figcaption_simulator_navbar,
+                                                            dmc.Space(h=10),
+
                                                         ],
                                                     ),
                                                     PanelResizeHandle(
@@ -74,7 +322,28 @@ layout = html.Div(
                                                     ),
                                                     Panel(
                                                         id="panel-2",
-                                                        children=[a_simulator_navbar],
+                                                        children=[
+                                                            abbr_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            aside_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            bdi_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            br_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            center_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            colgroup_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            del_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dir_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            embed_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            figure_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                                  ],
                                                     ),
                                                     PanelResizeHandle(
                                                         html.Div(
@@ -88,7 +357,26 @@ layout = html.Div(
                                                     Panel(
                                                         id="panel-3",
                                                         children=[
-                                                            abbr_simulator_navbar
+                                                            address_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            audio_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            bdo_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            button_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            cite_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            data_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            details_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            div_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            embed_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            footer_simulator_navbar,
+                                                            dmc.Space(h=10),
                                                         ],
                                                     ),
                                                     PanelResizeHandle(
@@ -103,7 +391,27 @@ layout = html.Div(
                                                     Panel(
                                                         id="panel-4",
                                                         children=[
-                                                            address_simulator_navbar
+                                                            area_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            b_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            big_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            canvas_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            code_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            datalist_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dfn_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            dl_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            fieldset_simulator_navbar,
+                                                            dmc.Space(h=10),
+                                                            footer_simulator_navbar,
+                                                            dmc.Space(h=10),
+
                                                         ],
                                                     ),
                                                 ],
@@ -316,1152 +624,1152 @@ def return_address_simulator_code(
 
 # Card area html.Area Simulator Code
 
-# @dash.callback(
-#     Output('card_display_area', 'children'),
-#     Input('card_area_simulator', 'n_clicks'),
-#     Input('card_area_showcase', 'n_clicks'),
-#     Input('card_area_simulator_code', 'n_clicks'),
-#     Input('card_area_attributes', 'n_clicks')
-# )
-# def return_area_simulator_code(card_area_simulator, card_area_showcase,
-#                             card_area_simulator_code, card_area_attributes):
-#     if card_area_simulator % 2 == 0:
-#         return area_simulator_navbar
-#     elif card_area_showcase % 2 == 0:
-#         return html.Div([
-#             # area_navbar,
-#             # area_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_area')
-#     elif card_area_simulator_code % 2 == 0:
-#         return html.Div([
-#             # area_navbar,
-#             # area_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_area')
-#     elif card_area_attributes % 2 == 0:
-#         return html.Div([
-#             # area_navbar,
-#             global_attributes
-#         ], id='card_display_area')
-#     else:
-#         return dash.no_update
-# # Card article html.Article Simulator Code
-# @dash.callback(
-#     Output('card_display_article', 'children'),
-#     Input('card_article_simulator', 'n_clicks'),
-#     Input('card_article_showcase', 'n_clicks'),
-#     Input('card_article_simulator_code', 'n_clicks'),
-#     Input('card_article_attributes', 'n_clicks')
-# )
-# def return_article_simulator_code(card_article_simulator, card_article_showcase,
-#                             card_article_simulator_code, card_article_attributes):
-#     if card_article_simulator % 2 == 0:
-#         return article_simulator_navbar
-#     elif card_article_showcase % 2 == 0:
-#         return html.Div([
-#             # article_navbar,
-#             # article_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_article')
-#     elif card_article_simulator_code % 2 == 0:
-#         return html.Div([
-#             # article_navbar,
-#             # area_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_article')
-#     elif card_article_attributes % 2 == 0:
-#         return html.Div([
-#             # article_navbar,
-#             global_attributes
-#         ], id='card_display_article')
-#     else:
-#         return dash.no_update
-# # Card aside html.Aside Simulator Code
-# @dash.callback(
-#     Output('card_display_aside', 'children'),
-#     Input('card_aside_simulator', 'n_clicks'),
-#     Input('card_aside_showcase', 'n_clicks'),
-#     Input('card_aside_simulator_code', 'n_clicks'),
-#     Input('card_aside_attributes', 'n_clicks')
-# )
-# def return_aside_simulator_code(card_aside_simulator, card_aside_showcase,
-#                             card_aside_simulator_code, card_aside_attributes):
-#     if card_aside_simulator % 2 == 0:
-#         return aside_simulator_navbar
-#     elif card_aside_showcase % 2 == 0:
-#         return html.Div([
-#             # aside_navbar,
-#             # aside_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_aside')
-#     elif card_aside_simulator_code % 2 == 0:
-#         return html.Div([
-#             # aside_navbar,
-#             # aside_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_aside')
-#     elif card_aside_attributes % 2 == 0:
-#         return html.Div([
-#             # aside_navbar,
-#             global_attributes
-#         ], id='card_display_aside')
-#     else:
-#         return dash.no_update
-# # Card audio html.Audio Simulator Code
-# @dash.callback(
-#     Output('card_display_audio', 'children'),
-#     Input('card_audio_simulator', 'n_clicks'),
-#     Input('card_audio_showcase', 'n_clicks'),
-#     Input('card_audio_simulator_code', 'n_clicks'),
-#     Input('card_audio_attributes', 'n_clicks')
-# )
-# def return_audio_simulator_code(card_audio_simulator, card_audio_showcase,
-#                             card_audio_simulator_code, card_audio_attributes):
-#     if card_audio_simulator % 2 == 0:
-#         return audio_simulator_navbar
-#     elif card_audio_showcase % 2 == 0:
-#         return html.Div([
-#             # audio_navbar,
-#             # audio_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_audio')
-#     elif card_audio_simulator_code % 2 == 0:
-#         return html.Div([
-#             # audio_navbar,
-#             # audio_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_audio')
-#     elif card_audio_attributes % 2 == 0:
-#         return html.Div([
-#             # audio_navbar,
-#             global_attributes
-#         ], id='card_display_audio')
-#     else:
-#         return dash.no_update
-# # Card b html.B Simulator Code
-# @dash.callback(
-#     Output('card_display_b', 'children'),
-#     Input('card_b_simulator', 'n_clicks'),
-#     Input('card_b_showcase', 'n_clicks'),
-#     Input('card_b_simulator_code', 'n_clicks'),
-#     Input('card_b_attributes', 'n_clicks')
-# )
-# def return_b_simulator_code(card_b_simulator, card_b_showcase,
-#                             card_b_simulator_code, card_b_attributes):
-#     if card_b_simulator % 2 == 0:
-#         return area_b_navbar
-#     elif card_b_showcase % 2 == 0:
-#         return html.Div([
-#             # b_navbar,
-#             # b_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_b')
-#     elif card_b_simulator_code % 2 == 0:
-#         return html.Div([
-#             # b_navbar,
-#             # b_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_b')
-#     elif card_b_attributes % 2 == 0:
-#         return html.Div([
-#             # b_navbar,
-#             global_attributes
-#         ], id='card_display_b')
-#     else:
-#         return dash.no_update
-# # Card base html.Base Simulator Code
-# @dash.callback(
-#     Output('card_display_base', 'children'),
-#     Input('card_base_simulator', 'n_clicks'),
-#     Input('card_base_showcase', 'n_clicks'),
-#     Input('card_base_simulator_code', 'n_clicks'),
-#     Input('card_base_attributes', 'n_clicks')
-# )
-# def return_base_simulator_code(card_base_simulator, card_base_showcase,
-#                             card_base_simulator_code, card_base_attributes):
-#     if card_base_simulator % 2 == 0:
-#         return area_base_navbar
-#     elif card_base_showcase % 2 == 0:
-#         return html.Div([
-#             # b_navbar,
-#             # b_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_base')
-#     elif card_base_simulator_code % 2 == 0:
-#         return html.Div([
-#             # base_navbar,
-#             # base_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_base')
-#     elif card_base_attributes % 2 == 0:
-#         return html.Div([
-#             # base_navbar,
-#             global_attributes
-#         ], id='card_display_base')
-#     else:
-#         return dash.no_update
-# # Card bdi html.Bdi Simulator Code
-# @dash.callback(
-#     Output('card_display_bdi', 'children'),
-#     Input('card_bdi_simulator', 'n_clicks'),
-#     Input('card_bdi_showcase', 'n_clicks'),
-#     Input('card_bdi_simulator_code', 'n_clicks'),
-#     Input('card_bdi_attributes', 'n_clicks')
-# )
-# def return_bdi_simulator_code(card_bdi_simulator, card_bdi_showcase,
-#                             card_bdi_simulator_code, card_bdi_attributes):
-#     if card_bdi_simulator % 2 == 0:
-#         return area_bdi_navbar
-#     elif card_bdi_showcase % 2 == 0:
-#         return html.Div([
-#             # bdi_navbar,
-#             # bdi_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_bdi')
-#     elif card_bdi_simulator_code % 2 == 0:
-#         return html.Div([
-#             # bdi_navbar,
-#             # bdi_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_bdi')
-#     elif card_bdi_attributes % 2 == 0:
-#         return html.Div([
-#             # bdi_navbar,
-#             global_attributes
-#         ], id='card_display_bdi')
-#     else:
-#         return dash.no_update
-# # Card bdo html.Bdo Simulator Code
-# @dash.callback(
-#     Output('card_display_bdo', 'children'),
-#     Input('card_bdo_simulator', 'n_clicks'),
-#     Input('card_bdo_showcase', 'n_clicks'),
-#     Input('card_bdo_simulator_code', 'n_clicks'),
-#     Input('card_bdo_attributes', 'n_clicks')
-# )
-# def return_bdo_simulator_code(card_bdo_simulator, card_bdo_showcase,
-#                             card_bdo_simulator_code, card_bdo_attributes):
-#     if card_bdo_simulator % 2 == 0:
-#         return area_bdo_navbar
-#     elif card_bdo_showcase % 2 == 0:
-#         return html.Div([
-#             # bdo_navbar,
-#             # bdo_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_bdo')
-#     elif card_bdo_simulator_code % 2 == 0:
-#         return html.Div([
-#             # bdo_navbar,
-#             # bdo_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_bdo')
-#     elif card_bdo_attributes % 2 == 0:
-#         return html.Div([
-#             # bdo_navbar,
-#             global_attributes
-#         ], id='card_display_bdo')
-#     else:
-#         return dash.no_update
-# # Card big html.Big Simulator Code
-# @dash.callback(
-#     Output('card_display_big', 'children'),
-#     Input('card_big_simulator', 'n_clicks'),
-#     Input('card_big_showcase', 'n_clicks'),
-#     Input('card_big_simulator_code', 'n_clicks'),
-#     Input('card_big_attributes', 'n_clicks')
-# )
-# def return_big_simulator_code(card_big_simulator, card_big_showcase,
-#                             card_big_simulator_code, card_big_attributes):
-#     if card_big_simulator % 2 == 0:
-#         return area_big_navbar
-#     elif card_big_showcase % 2 == 0:
-#         return html.Div([
-#             # big_navbar,
-#             # big_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_big')
-#     elif card_big_simulator_code % 2 == 0:
-#         return html.Div([
-#             # big_navbar,
-#             # big_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_big')
-#     elif card_big_attributes % 2 == 0:
-#         return html.Div([
-#             # big_navbar,
-#             global_attributes
-#         ], id='card_display_big')
-#     else:
-#         return dash.no_update
-# # Card blockquote html.Blockquote Simulator Code
-# @dash.callback(
-#     Output('card_display_blockquote', 'children'),
-#     Input('card_blockquote_simulator', 'n_clicks'),
-#     Input('card_blockquote_showcase', 'n_clicks'),
-#     Input('card_blockquote_simulator_code', 'n_clicks'),
-#     Input('card_blockquote_attributes', 'n_clicks')
-# )
-# def return_blockquote_simulator_code(card_blockquote_simulator, card_blockquote_showcase,
-#                             card_blockquote_simulator_code, card_blockquote_attributes):
-#     if card_blockquote_simulator % 2 == 0:
-#         return area_blockquote_navbar
-#     elif card_blockquote_showcase % 2 == 0:
-#         return html.Div([
-#             # blockquote_navbar,
-#             # blockquote_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_blockquote')
-#     elif card_blockquote_simulator_code % 2 == 0:
-#         return html.Div([
-#             # blockquote_navbar,
-#             # blockquote_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_blockquote')
-#     elif card_blockquote_attributes % 2 == 0:
-#         return html.Div([
-#             # blockquote_navbar,
-#             global_attributes
-#         ], id='card_display_blockquote')
-#     else:
-#         return dash.no_update
-# # Card br html.Br Simulator Code
-# @dash.callback(
-#     Output('card_display_br', 'children'),
-#     Input('card_br_simulator', 'n_clicks'),
-#     Input('card_br_showcase', 'n_clicks'),
-#     Input('card_br_simulator_code', 'n_clicks'),
-#     Input('card_br_attributes', 'n_clicks')
-# )
-# def return_br_simulator_code(card_br_simulator, card_br_showcase,
-#                             card_br_simulator_code, card_br_attributes):
-#     if card_br_simulator % 2 == 0:
-#         return area_br_navbar
-#     elif card_br_showcase % 2 == 0:
-#         return html.Div([
-#             # br_navbar,
-#             # br_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_b')
-#     elif card_br_simulator_code % 2 == 0:
-#         return html.Div([
-#             # br_navbar,
-#             # br_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_br')
-#     elif card_br_attributes % 2 == 0:
-#         return html.Div([
-#             # br_navbar,
-#             global_attributes
-#         ], id='card_display_br')
-#     else:
-#         return dash.no_update
-# # Card button html.Button Simulator Code
-# @dash.callback(
-#     Output('card_display_button', 'children'),
-#     Input('card_button_simulator', 'n_clicks'),
-#     Input('card_button_showcase', 'n_clicks'),
-#     Input('card_button_simulator_code', 'n_clicks'),
-#     Input('card_button_attributes', 'n_clicks')
-# )
-# def return_b_simulator_code(card_button_simulator, card_button_showcase,
-#                             card_button_simulator_code, card_button_attributes):
-#     if card_button_simulator % 2 == 0:
-#         return area_button_navbar
-#     elif card_button_showcase % 2 == 0:
-#         return html.Div([
-#             # button_navbar,
-#             # button_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_button')
-#     elif card_button_simulator_code % 2 == 0:
-#         return html.Div([
-#             # button_navbar,
-#             # button_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_button')
-#     elif card_button_attributes % 2 == 0:
-#         return html.Div([
-#             # button_navbar,
-#             global_attributes
-#         ], id='card_display_button')
-#     else:
-#         return dash.no_update
-# # Card canvas html.Canvas Simulator Code
-# @dash.callback(
-#     Output('card_display_canvas', 'children'),
-#     Input('card_canvas_simulator', 'n_clicks'),
-#     Input('card_canvas_showcase', 'n_clicks'),
-#     Input('card_canvas_simulator_code', 'n_clicks'),
-#     Input('card_canvas_attributes', 'n_clicks')
-# )
-# def return_canvas_simulator_code(card_canvas_simulator, card_canvas_showcase,
-#                             card_canvas_simulator_code, card_canvas_attributes):
-#     if card_canvas_simulator % 2 == 0:
-#         return area_canvas_navbar
-#     elif card_canvas_showcase % 2 == 0:
-#         return html.Div([
-#             # canvas_navbar,
-#             # canvas_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_canvas')
-#     elif card_canvas_simulator_code % 2 == 0:
-#         return html.Div([
-#             # canvas_navbar,
-#             # canvas_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_canvas')
-#     elif card_canvas_attributes % 2 == 0:
-#         return html.Div([
-#             # canvas_navbar,
-#             global_attributes
-#         ], id='card_display_canvas')
-#     else:
-#         return dash.no_update
-# # Card caption html.Caption Simulator Code
-# @dash.callback(
-#     Output('card_display_caption', 'children'),
-#     Input('card_caption_simulator', 'n_clicks'),
-#     Input('card_caption_showcase', 'n_clicks'),
-#     Input('card_caption_simulator_code', 'n_clicks'),
-#     Input('card_caption_attributes', 'n_clicks')
-# )
-# def return_caption_simulator_code(card_caption_simulator, card_caption_showcase,
-#                             card_caption_simulator_code, card_caption_attributes):
-#     if card_caption_simulator % 2 == 0:
-#         return area_caption_navbar
-#     elif card_caption_showcase % 2 == 0:
-#         return html.Div([
-#             # caption_navbar,
-#             # caption_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_caption')
-#     elif card_caption_simulator_code % 2 == 0:
-#         return html.Div([
-#             # caption_navbar,
-#             # caption_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_caption')
-#     elif card_caption_attributes % 2 == 0:
-#         return html.Div([
-#             # caption_navbar,
-#             global_attributes
-#         ], id='card_display_caption')
-#     else:
-#         return dash.no_update
-# # Card center html.Center Simulator Code
-# @dash.callback(
-#     Output('card_display_center', 'children'),
-#     Input('card_center_simulator', 'n_clicks'),
-#     Input('card_center_showcase', 'n_clicks'),
-#     Input('card_center_simulator_code', 'n_clicks'),
-#     Input('card_center_attributes', 'n_clicks')
-# )
-# def return_center_simulator_code(card_center_simulator, card_center_showcase,
-#                             card_center_simulator_code, card_center_attributes):
-#     if card_center_simulator % 2 == 0:
-#         return area_center_navbar
-#     elif card_c_showcase % 2 == 0:
-#         return html.Div([
-#             # center_navbar,
-#             # center_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_center')
-#     elif card_center_simulator_code % 2 == 0:
-#         return html.Div([
-#             # center_navbar,
-#             # center_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_center')
-#     elif card_center_attributes % 2 == 0:
-#         return html.Div([
-#             # center_navbar,
-#             global_attributes
-#         ], id='card_display_center')
-#     else:
-#         return dash.no_update
-# # Card cite html.Cite Simulator Code
-# @dash.callback(
-#     Output('card_display_cite', 'children'),
-#     Input('card_cite_simulator', 'n_clicks'),
-#     Input('card_cite_showcase', 'n_clicks'),
-#     Input('card_cite_simulator_code', 'n_clicks'),
-#     Input('card_cite_attributes', 'n_clicks')
-# )
-# def return_cite_simulator_code(card_cite_simulator, card_cite_showcase,
-#                             card_cite_simulator_code, card_cite_attributes):
-#     if card_cite_simulator % 2 == 0:
-#         return area_cite_navbar
-#     elif card_cite_showcase % 2 == 0:
-#         return html.Div([
-#             # cite_navbar,
-#             # cite_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_cite')
-#     elif card_cite_simulator_code % 2 == 0:
-#         return html.Div([
-#             # cite_navbar,
-#             # cite_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_cite')
-#     elif card_cite_attributes % 2 == 0:
-#         return html.Div([
-#             # cite_navbar,
-#             global_attributes
-#         ], id='card_display_cite')
-#     else:
-#         return dash.no_update
-# # Card code html.Code Simulator Code
-# @dash.callback(
-#     Output('card_display_code', 'children'),
-#     Input('card_code_simulator', 'n_clicks'),
-#     Input('card_code_showcase', 'n_clicks'),
-#     Input('card_code_simulator_code', 'n_clicks'),
-#     Input('card_code_attributes', 'n_clicks')
-# )
-# def return_code_simulator_code(card_code_simulator, card_code_showcase,
-#                             card_code_simulator_code, card_code_attributes):
-#     if card_code_simulator % 2 == 0:
-#         return area_code_navbar
-#     elif card_code_showcase % 2 == 0:
-#         return html.Div([
-#             # code_navbar,
-#             # code_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_code')
-#     elif card_code_simulator_code % 2 == 0:
-#         return html.Div([
-#             # code_navbar,
-#             # code_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_code')
-#     elif card_code_attributes % 2 == 0:
-#         return html.Div([
-#             # code_navbar,
-#             global_attributes
-#         ], id='card_display_code')
-#     else:
-#         return dash.no_update
-# # Card col html.Col Simulator Code
-# @dash.callback(
-#     Output('card_display_col', 'children'),
-#     Input('card_col_simulator', 'n_clicks'),
-#     Input('card_col_showcase', 'n_clicks'),
-#     Input('card_col_simulator_code', 'n_clicks'),
-#     Input('card_col_attributes', 'n_clicks')
-# )
-# def return_c_simulator_code(card_col_simulator, card_col_showcase,
-#                             card_col_simulator_code, card_col_attributes):
-#     if card_col_simulator % 2 == 0:
-#         return area_col_navbar
-#     elif card_col_showcase % 2 == 0:
-#         return html.Div([
-#             # col_navbar,
-#             # col_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_col')
-#     elif card_col_simulator_code % 2 == 0:
-#         return html.Div([
-#             # col_navbar,
-#             # col_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_col')
-#     elif card_col_attributes % 2 == 0:
-#         return html.Div([
-#             # col_navbar,
-#             global_attributes
-#         ], id='card_display_col')
-#     else:
-#         return dash.no_update
-# # Card colgroup html.Colgroup Simulator Code
-# @dash.callback(
-#     Output('card_display_colgroup', 'children'),
-#     Input('card_colgroup_simulator', 'n_clicks'),
-#     Input('card_colgroup_showcase', 'n_clicks'),
-#     Input('card_colgroup_simulator_code', 'n_clicks'),
-#     Input('card_colgroup_attributes', 'n_clicks')
-# )
-# def return_colgroup_simulator_code(card_colgroup_simulator, card_colgroup_showcase,
-#                             card_colgroup_simulator_code, card_colgroup_attributes):
-#     if card_colgroup_simulator % 2 == 0:
-#         return area_colgroup_navbar
-#     elif card_colgroup_showcase % 2 == 0:
-#         return html.Div([
-#             # colgroup_navbar,
-#             # colgroup_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_colgroup')
-#     elif card_colgroup_simulator_code % 2 == 0:
-#         return html.Div([
-#             # colgroup_navbar,
-#             # colgroup_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_colgroup')
-#     elif card_colgroup_attributes % 2 == 0:
-#         return html.Div([
-#             # colgroup_navbar,
-#             global_attributes
-#         ], id='card_display_colgroup')
-#     else:
-#         return dash.no_update
-# # Card data html.Data Simulator Code
-# @dash.callback(
-#     Output('card_display_data', 'children'),
-#     Input('card_data_simulator', 'n_clicks'),
-#     Input('card_data_showcase', 'n_clicks'),
-#     Input('card_data_simulator_code', 'n_clicks'),
-#     Input('card_data_attributes', 'n_clicks')
-# )
-# def return_data_simulator_code(card_data_simulator, card_data_showcase,
-#                             card_data_simulator_code, card_data_attributes):
-#     if card_data_simulator % 2 == 0:
-#         return area_data_navbar
-#     elif card_data_showcase % 2 == 0:
-#         return html.Div([
-#             # data_navbar,
-#             # data_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_data')
-#     elif card_data_simulator_code % 2 == 0:
-#         return html.Div([
-#             # data_navbar,
-#             # data_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_data')
-#     elif card_data_attributes % 2 == 0:
-#         return html.Div([
-#             # data_navbar,
-#             global_attributes
-#         ], id='card_display_data')
-#     else:
-#         return dash.no_update
-# # Card datalist html.Datalist Simulator Code
-# @dash.callback(
-#     Output('card_display_datalist', 'children'),
-#     Input('card_datalist_simulator', 'n_clicks'),
-#     Input('card_datalist_showcase', 'n_clicks'),
-#     Input('card_datalist_simulator_code', 'n_clicks'),
-#     Input('card_datalist_attributes', 'n_clicks')
-# )
-# def return_datalist_simulator_code(card_datalist_simulator, card_datalist_showcase,
-#                             card_datalist_simulator_code, card_datalist_attributes):
-#     if card_datalist_simulator % 2 == 0:
-#         return area_datalist_navbar
-#     elif card_datalist_showcase % 2 == 0:
-#         return html.Div([
-#             # datalist_navbar,
-#             # datalist_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_datalist')
-#     elif card_datalist_simulator_code % 2 == 0:
-#         return html.Div([
-#             # datalist_navbar,
-#             # datalist_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_datalist')
-#     elif card_datalist_attributes % 2 == 0:
-#         return html.Div([
-#             # datalist_navbar,
-#             global_attributes
-#         ], id='card_display_datalist')
-#     else:
-#         return dash.no_update
-# # Card dd html.DD Simulator Code
-# @dash.callback(
-#     Output('card_display_dd', 'children'),
-#     Input('card_dd_simulator', 'n_clicks'),
-#     Input('card_dd_showcase', 'n_clicks'),
-#     Input('card_dd_simulator_code', 'n_clicks'),
-#     Input('card_dd_attributes', 'n_clicks')
-# )
-# def return_dd_simulator_code(card_dd_simulator, card_dd_showcase,
-#                             card_dd_simulator_code, card_dd_attributes):
-#     if card_dd_simulator % 2 == 0:
-#         return area_dd_navbar
-#     elif card_dd_showcase % 2 == 0:
-#         return html.Div([
-#             # dd_navbar,
-#             # dd_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dd')
-#     elif card_dd_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dd_navbar,
-#             # dd_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dd')
-#     elif card_dd_attributes % 2 == 0:
-#         return html.Div([
-#             # dd_navbar,
-#             global_attributes
-#         ], id='card_display_dd')
-#     else:
-#         return dash.no_update
-# # Card del html.Del Simulator Code
-# @dash.callback(
-#     Output('card_display_del', 'children'),
-#     Input('card_del_simulator', 'n_clicks'),
-#     Input('card_del_showcase', 'n_clicks'),
-#     Input('card_del_simulator_code', 'n_clicks'),
-#     Input('card_del_attributes', 'n_clicks')
-# )
-# def return_del_simulator_code(card_del_simulator, card_del_showcase,
-#                             card_del_simulator_code, card_del_attributes):
-#     if card_del_simulator % 2 == 0:
-#         return area_del_navbar
-#     elif card_del_showcase % 2 == 0:
-#         return html.Div([
-#             # del_navbar,
-#             # del_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_del')
-#     elif card_del_simulator_code % 2 == 0:
-#         return html.Div([
-#             # del_navbar,
-#             # del_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_del')
-#     elif card_del_attributes % 2 == 0:
-#         return html.Div([
-#             # del_navbar,
-#             global_attributes
-#         ], id='card_display_del')
-#     else:
-#         return dash.no_update
-# # Card details html.Details Simulator Code
-# @dash.callback(
-#     Output('card_display_details', 'children'),
-#     Input('card_details_simulator', 'n_clicks'),
-#     Input('card_details_showcase', 'n_clicks'),
-#     Input('card_details_simulator_code', 'n_clicks'),
-#     Input('card_details_attributes', 'n_clicks')
-# )
-# def return_details_simulator_code(card_details_simulator, card_details_showcase,
-#                             card_details_simulator_code, card_details_attributes):
-#     if card_details_simulator % 2 == 0:
-#         return area_details_navbar
-#     elif card_details_showcase % 2 == 0:
-#         return html.Div([
-#             # details_navbar,
-#             # details_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_details')
-#     elif card_details_simulator_code % 2 == 0:
-#         return html.Div([
-#             # details_navbar,
-#             # details_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_details')
-#     elif card_details_attributes % 2 == 0:
-#         return html.Div([
-#             # details_navbar,
-#             global_attributes
-#         ], id='card_display_details')
-#     else:
-#         return dash.no_update
-# # Card dfn html.Dfn Simulator Code
-# @dash.callback(
-#     Output('card_display_dfn', 'children'),
-#     Input('card_dfn_simulator', 'n_clicks'),
-#     Input('card_dfn_showcase', 'n_clicks'),
-#     Input('card_dfn_simulator_code', 'n_clicks'),
-#     Input('card_dfn_attributes', 'n_clicks')
-# )
-# def return_dfn_simulator_code(card_dfn_simulator, card_dfn_showcase,
-#                             card_dfn_simulator_code, card_dfn_attributes):
-#     if card_dfn_simulator % 2 == 0:
-#         return area_dfn_navbar
-#     elif card_dfn_showcase % 2 == 0:
-#         return html.Div([
-#             # dfn_navbar,
-#             # dfn_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dfn')
-#     elif card_dfn_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dfn_navbar,
-#             # dfn_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dfn')
-#     elif card_dfn_attributes % 2 == 0:
-#         return html.Div([
-#             # dfn_navbar,
-#             global_attributes
-#         ], id='card_display_dfn')
-#     else:
-#         return dash.no_update
-# # Card dialog html.Dialog Simulator Code
-# @dash.callback(
-#     Output('card_display_dialog', 'children'),
-#     Input('card_dialog_simulator', 'n_clicks'),
-#     Input('card_dialog_showcase', 'n_clicks'),
-#     Input('card_dialog_simulator_code', 'n_clicks'),
-#     Input('card_dialog_attributes', 'n_clicks')
-# )
-# def return_dialog_simulator_code(card_dialog_simulator, card_dialog_showcase,
-#                             card_dialog_simulator_code, card_dialog_attributes):
-#     if card_dialog_simulator % 2 == 0:
-#         return area_dialog_navbar
-#     elif card_dialog_showcase % 2 == 0:
-#         return html.Div([
-#             # dialog_navbar,
-#             # dialog_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dialog')
-#     elif card_dialog_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dialog_navbar,
-#             # dialog_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dialog')
-#     elif card_dialog_attributes % 2 == 0:
-#         return html.Div([
-#             # dialog_navbar,
-#             global_attributes
-#         ], id='card_display_dialog')
-#     else:
-#         return dash.no_update
-# # Card dir html.Dir Simulator Code
-# @dash.callback(
-#     Output('card_display_dir', 'children'),
-#     Input('card_dir_simulator', 'n_clicks'),
-#     Input('card_dir_showcase', 'n_clicks'),
-#     Input('card_dir_simulator_code', 'n_clicks'),
-#     Input('card_dir_attributes', 'n_clicks')
-# )
-# def return_dir_simulator_code(card_dir_simulator, card_dir_showcase,
-#                             card_dir_simulator_code, card_dir_attributes):
-#     if card_dir_simulator % 2 == 0:
-#         return area_dir_navbar
-#     elif card_dir_showcase % 2 == 0:
-#         return html.Div([
-#             # dir_navbar,
-#             # dir_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dir')
-#     elif card_dir_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dir_navbar,
-#             # dir_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dir')
-#     elif card_dir_attributes % 2 == 0:
-#         return html.Div([
-#             # dir_navbar,
-#             global_attributes
-#         ], id='card_display_dir')
-#     else:
-#         return dash.no_update
-# # Card div html.Div Simulator Code
-# @dash.callback(
-#     Output('card_display_div', 'children'),
-#     Input('card_div_simulator', 'n_clicks'),
-#     Input('card_div_showcase', 'n_clicks'),
-#     Input('card_div_simulator_code', 'n_clicks'),
-#     Input('card_div_attributes', 'n_clicks')
-# )
-# def return_div_simulator_code(card_div_simulator, card_div_showcase,
-#                             card_div_simulator_code, card_div_attributes):
-#     if card_div_simulator % 2 == 0:
-#         return area_div_navbar
-#     elif card_div_showcase % 2 == 0:
-#         return html.Div([
-#             # div_navbar,
-#             # div_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_div')
-#     elif card_div_simulator_code % 2 == 0:
-#         return html.Div([
-#             # div_navbar,
-#             # div_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_div')
-#     elif card_div_attributes % 2 == 0:
-#         return html.Div([
-#             # div_navbar,
-#             global_attributes
-#         ], id='card_display_div')
-#     else:
-#         return dash.no_update
-# # Card dl html.Dl Simulator Code
-# @dash.callback(
-#     Output('card_display_dl', 'children'),
-#     Input('card_dl_simulator', 'n_clicks'),
-#     Input('card_dl_showcase', 'n_clicks'),
-#     Input('card_dl_simulator_code', 'n_clicks'),
-#     Input('card_dl_attributes', 'n_clicks')
-# )
-# def return_dl_simulator_code(card_dl_simulator, card_dl_showcase,
-#                             card_dl_simulator_code, card_dl_attributes):
-#     if card_dl_simulator % 2 == 0:
-#         return area_dl_navbar
-#     elif card_dl_showcase % 2 == 0:
-#         return html.Div([
-#             # dl_navbar,
-#             # dl_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dl')
-#     elif card_dl_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dl_navbar,
-#             # dl_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dl')
-#     elif card_dl_attributes % 2 == 0:
-#         return html.Div([
-#             # dl_navbar,
-#             global_attributes
-#         ], id='card_display_dl')
-#     else:
-#         return dash.no_update
-# # Card dt html.Dt Simulator Code
-# @dash.callback(
-#     Output('card_display_dt', 'children'),
-#     Input('card_dt_simulator', 'n_clicks'),
-#     Input('card_dt_showcase', 'n_clicks'),
-#     Input('card_dt_simulator_code', 'n_clicks'),
-#     Input('card_dt_attributes', 'n_clicks')
-# )
-# def return_dt_simulator_code(card_dt_simulator, card_dt_showcase,
-#                             card_dt_simulator_code, card_dt_attributes):
-#     if card_dt_simulator % 2 == 0:
-#         return area_dt_navbar
-#     elif card_dt_showcase % 2 == 0:
-#         return html.Div([
-#             # dt_navbar,
-#             # dt_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dt')
-#     elif card_dt_simulator_code % 2 == 0:
-#         return html.Div([
-#             # dt_navbar,
-#             # dt_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_dt')
-#     elif card_dt_attributes % 2 == 0:
-#         return html.Div([
-#             # dt_navbar,
-#             global_attributes
-#         ], id='card_display_dt')
-#     else:
-#         return dash.no_update
-# # Card em html.Em Simulator Code
-# @dash.callback(
-#     Output('card_display_em', 'children'),
-#     Input('card_em_simulator', 'n_clicks'),
-#     Input('card_em_showcase', 'n_clicks'),
-#     Input('card_em_simulator_code', 'n_clicks'),
-#     Input('card_em_attributes', 'n_clicks')
-# )
-# def return_em_simulator_code(card_em_simulator, card_em_showcase,
-#                             card_em_simulator_code, card_em_attributes):
-#     if card_em_simulator % 2 == 0:
-#         return em_simulator_navbar
-#     elif card_em_showcase % 2 == 0:
-#         return html.Div([
-#             # em_navbar,
-#             # em_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_em')
-#     elif card_em_simulator_code % 2 == 0:
-#         return html.Div([
-#             # em_navbar,
-#             # em_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_em')
-#     elif card_em_attributes % 2 == 0:
-#         return html.Div([
-#             # em_navbar,
-#             global_attributes
-#         ], id='card_display_em')
-#     else:
-#         return dash.no_update
-# # Card embed html.Embed Simulator Code
-# @dash.callback(
-#     Output('card_display_embed', 'children'),
-#     Input('card_embed_simulator', 'n_clicks'),
-#     Input('card_embed_showcase', 'n_clicks'),
-#     Input('card_embed_simulator_code', 'n_clicks'),
-#     Input('card_embed_attributes', 'n_clicks')
-# )
-# def return_embed_simulator_code(card_embed_simulator, card_embed_showcase,
-#                             card_embed_simulator_code, card_embed_attributes):
-#     if card_embed_simulator % 2 == 0:
-#         return embed_simulator_navbar
-#     elif card_embed_showcase % 2 == 0:
-#         return html.Div([
-#             # embed_navbar,
-#             # embed_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_embed')
-#     elif card_embed_simulator_code % 2 == 0:
-#         return html.Div([
-#             # embed_navbar,
-#             # embed_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_embed')
-#     elif card_embed_attributes % 2 == 0:
-#         return html.Div([
-#             # embed_navbar,
-#             global_attributes
-#         ], id='card_display_embed')
-#     else:
-#         return dash.no_update
-# # Card fieldset html.Fieldset Simulator Code
-# @dash.callback(
-#     Output('card_display_fieldset', 'children'),
-#     Input('card_fieldset_simulator', 'n_clicks'),
-#     Input('card_fieldset_showcase', 'n_clicks'),
-#     Input('card_fieldset_simulator_code', 'n_clicks'),
-#     Input('card_fieldset_attributes', 'n_clicks')
-# )
-# def return_fieldset_simulator_code(card_fieldset_simulator, card_fieldset_showcase,
-#                             card_fieldset_simulator_code, card_fieldset_attributes):
-#     if card_fieldset_simulator % 2 == 0:
-#         return fieldset_simulator_navbar
-#     elif card_fieldset_showcase % 2 == 0:
-#         return html.Div([
-#             # fieldset_navbar,
-#             # fieldset_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_fieldset')
-#     elif card_fieldset_simulator_code % 2 == 0:
-#         return html.Div([
-#             # fieldset_navbar,
-#             # fieldset_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_fieldset')
-#     elif card_fieldset_attributes % 2 == 0:
-#         return html.Div([
-#             # fieldset_navbar,
-#             global_attributes
-#         ], id='card_display_fieldset')
-#     else:
-#         return dash.no_update
-# # Card figcaption html.Figcaption Simulator Code
-# @dash.callback(
-#     Output('card_display_figcaption', 'children'),
-#     Input('card_figcaption_simulator', 'n_clicks'),
-#     Input('card_figcaption_showcase', 'n_clicks'),
-#     Input('card_figcaption_simulator_code', 'n_clicks'),
-#     Input('card_figcaption_attributes', 'n_clicks')
-# )
-# def return_figcaption_simulator_code(card_figcaption_simulator, card_figcaption_showcase,
-#                             card_figcaption_simulator_code, card_figcaption_attributes):
-#     if card_figcaption_simulator % 2 == 0:
-#         return figcaption_simulator_navbar
-#     elif card_figcaption_showcase % 2 == 0:
-#         return html.Div([
-#             # figcaption_navbar,
-#             # figcaption_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_figcaption')
-#     elif card_figcaption_simulator_code % 2 == 0:
-#         return html.Div([
-#             # figcaption_navbar,
-#             # figcaption_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_figcaption')
-#     elif card_figcaption_attributes % 2 == 0:
-#         return html.Div([
-#             # figcaption_navbar,
-#             global_attributes
-#         ], id='card_display_figcaption')
-#     else:
-#         return dash.no_update
-# # Card figure html.Figure Simulator Code
-# @dash.callback(
-#     Output('card_display_figure', 'children'),
-#     Input('card_figure_simulator', 'n_clicks'),
-#     Input('card_figure_showcase', 'n_clicks'),
-#     Input('card_figure_simulator_code', 'n_clicks'),
-#     Input('card_figure_attributes', 'n_clicks')
-# )
-# def return_figure_simulator_code(card_figure_simulator, card_figure_showcase,
-#                             card_figure_simulator_code, card_figure_attributes):
-#     if card_figure_simulator % 2 == 0:
-#         return figure_simulator_navbar
-#     elif card_figure_showcase % 2 == 0:
-#         return html.Div([
-#             # figure_navbar,
-#             # figure_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_figure')
-#     elif card_figure_simulator_code % 2 == 0:
-#         return html.Div([
-#             # figure_navbar,
-#             # figure_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_figure')
-#     elif card_figure_attributes % 2 == 0:
-#         return html.Div([
-#             # figure_navbar,
-#             global_attributes
-#         ], id='card_display_figure')
-#     else:
-#         return dash.no_update
-# # Card font html.Font Simulator Code
-# @dash.callback(
-#     Output('card_display_font', 'children'),
-#     Input('card_font_simulator', 'n_clicks'),
-#     Input('card_font_showcase', 'n_clicks'),
-#     Input('card_font_simulator_code', 'n_clicks'),
-#     Input('card_font_attributes', 'n_clicks')
-# )
-# def return_font_simulator_code(card_font_simulator, card_font_showcase,
-#                             card_font_simulator_code, card_font_attributes):
-#     if card_font_simulator % 2 == 0:
-#         return font_simulator_navbar
-#     elif card_font_showcase % 2 == 0:
-#         return html.Div([
-#             # font_navbar,
-#             # font_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_font')
-#     elif card_font_simulator_code % 2 == 0:
-#         return html.Div([
-#             # font_navbar,
-#             # font_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_font')
-#     elif card_font_attributes % 2 == 0:
-#         return html.Div([
-#             # font_navbar,
-#             global_attributes
-#         ], id='card_display_font')
-#     else:
-#         return dash.no_update
-# # Card frameset html.Frameset Simulator Code
-# @dash.callback(
-#     Output('card_display_frameset', 'children'),
-#     Input('card_frameset_simulator', 'n_clicks'),
-#     Input('card_frameset_showcase', 'n_clicks'),
-#     Input('card_frameset_simulator_code', 'n_clicks'),
-#     Input('card_frameset_attributes', 'n_clicks')
-# )
-# def return_frameset_simulator_code(card_frameset_simulator, card_frameset_showcase,
-#                             card_frameset_simulator_code, card_frameset_attributes):
-#     if card_frameset_simulator % 2 == 0:
-#         return frameset_simulator_navbar
-#     elif card_frameset_showcase % 2 == 0:
-#         return html.Div([
-#             # frameset_navbar,
-#             # frameset_showcase
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_frameset')
-#     elif card_frameset_simulator_code % 2 == 0:
-#         return html.Div([
-#             # frameset_navbar,
-#             # frameset_example_code
-#         ], style={'margin': 0,
-#                   'padding': 0}, id='card_display_frameset')
-#     elif card_frameset_attributes % 2 == 0:
-#         return html.Div([
-#             # frameset_navbar,
-#             global_attributes
-#         ], id='card_display_frameset')
-#     else:
-#         return dash.no_update
+@dash.callback(
+    Output('card_display_area', 'children'),
+    Input('card_area_simulator', 'n_clicks'),
+    Input('card_area_showcase', 'n_clicks'),
+    Input('card_area_simulator_code', 'n_clicks'),
+    Input('card_area_attributes', 'n_clicks')
+)
+def return_area_simulator_code(card_area_simulator, card_area_showcase,
+                            card_area_simulator_code, card_area_attributes):
+    if card_area_simulator % 2 == 0:
+        return area_simulator_navbar
+    elif card_area_showcase % 2 == 0:
+        return html.Div([
+            # area_navbar,
+            # area_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_area')
+    elif card_area_simulator_code % 2 == 0:
+        return html.Div([
+            # area_navbar,
+            # area_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_area')
+    elif card_area_attributes % 2 == 0:
+        return html.Div([
+            # area_navbar,
+            global_attributes
+        ], id='card_display_area')
+    else:
+        return dash.no_update
+# Card article html.Article Simulator Code
+@dash.callback(
+    Output('card_display_article', 'children'),
+    Input('card_article_simulator', 'n_clicks'),
+    Input('card_article_showcase', 'n_clicks'),
+    Input('card_article_simulator_code', 'n_clicks'),
+    Input('card_article_attributes', 'n_clicks')
+)
+def return_article_simulator_code(card_article_simulator, card_article_showcase,
+                            card_article_simulator_code, card_article_attributes):
+    if card_article_simulator % 2 == 0:
+        return article_simulator_navbar
+    elif card_article_showcase % 2 == 0:
+        return html.Div([
+            # article_navbar,
+            # article_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_article')
+    elif card_article_simulator_code % 2 == 0:
+        return html.Div([
+            # article_navbar,
+            # area_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_article')
+    elif card_article_attributes % 2 == 0:
+        return html.Div([
+            # article_navbar,
+            global_attributes
+        ], id='card_display_article')
+    else:
+        return dash.no_update
+# Card aside html.Aside Simulator Code
+@dash.callback(
+    Output('card_display_aside', 'children'),
+    Input('card_aside_simulator', 'n_clicks'),
+    Input('card_aside_showcase', 'n_clicks'),
+    Input('card_aside_simulator_code', 'n_clicks'),
+    Input('card_aside_attributes', 'n_clicks')
+)
+def return_aside_simulator_code(card_aside_simulator, card_aside_showcase,
+                            card_aside_simulator_code, card_aside_attributes):
+    if card_aside_simulator % 2 == 0:
+        return aside_simulator_navbar
+    elif card_aside_showcase % 2 == 0:
+        return html.Div([
+            # aside_navbar,
+            # aside_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_aside')
+    elif card_aside_simulator_code % 2 == 0:
+        return html.Div([
+            # aside_navbar,
+            # aside_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_aside')
+    elif card_aside_attributes % 2 == 0:
+        return html.Div([
+            # aside_navbar,
+            global_attributes
+        ], id='card_display_aside')
+    else:
+        return dash.no_update
+# Card audio html.Audio Simulator Code
+@dash.callback(
+    Output('card_display_audio', 'children'),
+    Input('card_audio_simulator', 'n_clicks'),
+    Input('card_audio_showcase', 'n_clicks'),
+    Input('card_audio_simulator_code', 'n_clicks'),
+    Input('card_audio_attributes', 'n_clicks')
+)
+def return_audio_simulator_code(card_audio_simulator, card_audio_showcase,
+                            card_audio_simulator_code, card_audio_attributes):
+    if card_audio_simulator % 2 == 0:
+        return audio_simulator_navbar
+    elif card_audio_showcase % 2 == 0:
+        return html.Div([
+            # audio_navbar,
+            # audio_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_audio')
+    elif card_audio_simulator_code % 2 == 0:
+        return html.Div([
+            # audio_navbar,
+            # audio_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_audio')
+    elif card_audio_attributes % 2 == 0:
+        return html.Div([
+            # audio_navbar,
+            global_attributes
+        ], id='card_display_audio')
+    else:
+        return dash.no_update
+# Card b html.B Simulator Code
+@dash.callback(
+    Output('card_display_b', 'children'),
+    Input('card_b_simulator', 'n_clicks'),
+    Input('card_b_showcase', 'n_clicks'),
+    Input('card_b_simulator_code', 'n_clicks'),
+    Input('card_b_attributes', 'n_clicks')
+)
+def return_b_simulator_code(card_b_simulator, card_b_showcase,
+                            card_b_simulator_code, card_b_attributes):
+    if card_b_simulator % 2 == 0:
+        return b_simulator_navbar
+    elif card_b_showcase % 2 == 0:
+        return html.Div([
+            b_navbar,
+            b_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_b')
+    elif card_b_simulator_code % 2 == 0:
+        return html.Div([
+            b_navbar,
+            b_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_b')
+    elif card_b_attributes % 2 == 0:
+        return html.Div([
+            b_navbar,
+            global_attributes
+        ], id='card_display_b')
+    else:
+        return dash.no_update
+# Card base html.Base Simulator Code
+@dash.callback(
+    Output('card_display_base', 'children'),
+    Input('card_base_simulator', 'n_clicks'),
+    Input('card_base_showcase', 'n_clicks'),
+    Input('card_base_simulator_code', 'n_clicks'),
+    Input('card_base_attributes', 'n_clicks')
+)
+def return_base_simulator_code(card_base_simulator, card_base_showcase,
+                            card_base_simulator_code, card_base_attributes):
+    if card_base_simulator % 2 == 0:
+        return base_simulator_navbar
+    elif card_base_showcase % 2 == 0:
+        return html.Div([
+            b_navbar,
+            b_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_base')
+    elif card_base_simulator_code % 2 == 0:
+        return html.Div([
+            base_navbar,
+            base_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_base')
+    elif card_base_attributes % 2 == 0:
+        return html.Div([
+            # base_navbar,
+            global_attributes
+        ], id='card_display_base')
+    else:
+        return dash.no_update
+# Card bdi html.Bdi Simulator Code
+@dash.callback(
+    Output('card_display_bdi', 'children'),
+    Input('card_bdi_simulator', 'n_clicks'),
+    Input('card_bdi_showcase', 'n_clicks'),
+    Input('card_bdi_simulator_code', 'n_clicks'),
+    Input('card_bdi_attributes', 'n_clicks')
+)
+def return_bdi_simulator_code(card_bdi_simulator, card_bdi_showcase,
+                            card_bdi_simulator_code, card_bdi_attributes):
+    if card_bdi_simulator % 2 == 0:
+        return bdi_simulator_navbar
+    elif card_bdi_showcase % 2 == 0:
+        return html.Div([
+            bdi_navbar,
+            bdi_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_bdi')
+    elif card_bdi_simulator_code % 2 == 0:
+        return html.Div([
+            bdi_navbar,
+            bdi_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_bdi')
+    elif card_bdi_attributes % 2 == 0:
+        return html.Div([
+            # bdi_navbar,
+            global_attributes
+        ], id='card_display_bdi')
+    else:
+        return dash.no_update
+# Card bdo html.Bdo Simulator Code
+@dash.callback(
+    Output('card_display_bdo', 'children'),
+    Input('card_bdo_simulator', 'n_clicks'),
+    Input('card_bdo_showcase', 'n_clicks'),
+    Input('card_bdo_simulator_code', 'n_clicks'),
+    Input('card_bdo_attributes', 'n_clicks')
+)
+def return_bdo_simulator_code(card_bdo_simulator, card_bdo_showcase,
+                            card_bdo_simulator_code, card_bdo_attributes):
+    if card_bdo_simulator % 2 == 0:
+        return bdo_simulator_navbar
+    elif card_bdo_showcase % 2 == 0:
+        return html.Div([
+            bdo_navbar,
+            bdo_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_bdo')
+    elif card_bdo_simulator_code % 2 == 0:
+        return html.Div([
+            bdo_navbar,
+            bdo_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_bdo')
+    elif card_bdo_attributes % 2 == 0:
+        return html.Div([
+            # bdo_navbar,
+            global_attributes
+        ], id='card_display_bdo')
+    else:
+        return dash.no_update
+# Card big html.Big Simulator Code
+@dash.callback(
+    Output('card_display_big', 'children'),
+    Input('card_big_simulator', 'n_clicks'),
+    Input('card_big_showcase', 'n_clicks'),
+    Input('card_big_simulator_code', 'n_clicks'),
+    Input('card_big_attributes', 'n_clicks')
+)
+def return_big_simulator_code(card_big_simulator, card_big_showcase,
+                            card_big_simulator_code, card_big_attributes):
+    if card_big_simulator % 2 == 0:
+        return big_simulator_navbar
+    elif card_big_showcase % 2 == 0:
+        return html.Div([
+            big_navbar,
+            big_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_big')
+    elif card_big_simulator_code % 2 == 0:
+        return html.Div([
+            big_navbar,
+            big_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_big')
+    elif card_big_attributes % 2 == 0:
+        return html.Div([
+            big_navbar,
+            global_attributes
+        ], id='card_display_big')
+    else:
+        return dash.no_update
+# Card blockquote html.Blockquote Simulator Code
+@dash.callback(
+    Output('card_display_blockquote', 'children'),
+    Input('card_blockquote_simulator', 'n_clicks'),
+    Input('card_blockquote_showcase', 'n_clicks'),
+    Input('card_blockquote_simulator_code', 'n_clicks'),
+    Input('card_blockquote_attributes', 'n_clicks')
+)
+def return_blockquote_simulator_code(card_blockquote_simulator, card_blockquote_showcase,
+                            card_blockquote_simulator_code, card_blockquote_attributes):
+    if card_blockquote_simulator % 2 == 0:
+        return blockquote_simulator_navbar
+    elif card_blockquote_showcase % 2 == 0:
+        return html.Div([
+            blockquote_navbar,
+            blockquote_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_blockquote')
+    elif card_blockquote_simulator_code % 2 == 0:
+        return html.Div([
+            blockquote_navbar,
+            blockquote_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_blockquote')
+    elif card_blockquote_attributes % 2 == 0:
+        return html.Div([
+            blockquote_navbar,
+            global_attributes
+        ], id='card_display_blockquote')
+    else:
+        return dash.no_update
+# Card br html.Br Simulator Code
+@dash.callback(
+    Output('card_display_br', 'children'),
+    Input('card_br_simulator', 'n_clicks'),
+    Input('card_br_showcase', 'n_clicks'),
+    Input('card_br_simulator_code', 'n_clicks'),
+    Input('card_br_attributes', 'n_clicks')
+)
+def return_br_simulator_code(card_br_simulator, card_br_showcase,
+                            card_br_simulator_code, card_br_attributes):
+    if card_br_simulator % 2 == 0:
+        return br_simulator_navbar
+    elif card_br_showcase % 2 == 0:
+        return html.Div([
+            br_navbar,
+            br_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_b')
+    elif card_br_simulator_code % 2 == 0:
+        return html.Div([
+            br_navbar,
+            br_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_br')
+    elif card_br_attributes % 2 == 0:
+        return html.Div([
+            br_navbar,
+            global_attributes
+        ], id='card_display_br')
+    else:
+        return dash.no_update
+# Card button html.Button Simulator Code
+@dash.callback(
+    Output('card_display_button', 'children'),
+    Input('card_button_simulator', 'n_clicks'),
+    Input('card_button_showcase', 'n_clicks'),
+    Input('card_button_simulator_code', 'n_clicks'),
+    Input('card_button_attributes', 'n_clicks')
+)
+def return_b_simulator_code(card_button_simulator, card_button_showcase,
+                            card_button_simulator_code, card_button_attributes):
+    if card_button_simulator % 2 == 0:
+        return button_simulator_navbar
+    elif card_button_showcase % 2 == 0:
+        return html.Div([
+            button_navbar,
+            button_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_button')
+    elif card_button_simulator_code % 2 == 0:
+        return html.Div([
+            button_navbar,
+            button_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_button')
+    elif card_button_attributes % 2 == 0:
+        return html.Div([
+            button_navbar,
+            global_attributes
+        ], id='card_display_button')
+    else:
+        return dash.no_update
+# Card canvas html.Canvas Simulator Code
+@dash.callback(
+    Output('card_display_canvas', 'children'),
+    Input('card_canvas_simulator', 'n_clicks'),
+    Input('card_canvas_showcase', 'n_clicks'),
+    Input('card_canvas_simulator_code', 'n_clicks'),
+    Input('card_canvas_attributes', 'n_clicks')
+)
+def return_canvas_simulator_code(card_canvas_simulator, card_canvas_showcase,
+                            card_canvas_simulator_code, card_canvas_attributes):
+    if card_canvas_simulator % 2 == 0:
+        return canvas_simulator_navbar
+    elif card_canvas_showcase % 2 == 0:
+        return html.Div([
+            canvas_navbar,
+            canvas_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_canvas')
+    elif card_canvas_simulator_code % 2 == 0:
+        return html.Div([
+            canvas_navbar,
+            canvas_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_canvas')
+    elif card_canvas_attributes % 2 == 0:
+        return html.Div([
+            canvas_navbar,
+            global_attributes
+        ], id='card_display_canvas')
+    else:
+        return dash.no_update
+# Card caption html.Caption Simulator Code
+@dash.callback(
+    Output('card_display_caption', 'children'),
+    Input('card_caption_simulator', 'n_clicks'),
+    Input('card_caption_showcase', 'n_clicks'),
+    Input('card_caption_simulator_code', 'n_clicks'),
+    Input('card_caption_attributes', 'n_clicks')
+)
+def return_caption_simulator_code(card_caption_simulator, card_caption_showcase,
+                            card_caption_simulator_code, card_caption_attributes):
+    if card_caption_simulator % 2 == 0:
+        return caption_simulator_navbar
+    elif card_caption_showcase % 2 == 0:
+        return html.Div([
+            caption_navbar,
+            caption_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_caption')
+    elif card_caption_simulator_code % 2 == 0:
+        return html.Div([
+            caption_navbar,
+            caption_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_caption')
+    elif card_caption_attributes % 2 == 0:
+        return html.Div([
+            caption_navbar,
+            global_attributes
+        ], id='card_display_caption')
+    else:
+        return dash.no_update
+# Card center html.Center Simulator Code
+@dash.callback(
+    Output('card_display_center', 'children'),
+    Input('card_center_simulator', 'n_clicks'),
+    Input('card_center_showcase', 'n_clicks'),
+    Input('card_center_simulator_code', 'n_clicks'),
+    Input('card_center_attributes', 'n_clicks')
+)
+def return_center_simulator_code(card_center_simulator, card_center_showcase,
+                            card_center_simulator_code, card_center_attributes):
+    if card_center_simulator % 2 == 0:
+        return center_simulator_navbar
+    elif card_center_showcase % 2 == 0:
+        return html.Div([
+            center_navbar,
+            center_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_center')
+    elif card_center_simulator_code % 2 == 0:
+        return html.Div([
+            center_navbar,
+            center_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_center')
+    elif card_center_attributes % 2 == 0:
+        return html.Div([
+            # center_navbar,
+            global_attributes
+        ], id='card_display_center')
+    else:
+        return dash.no_update
+# Card cite html.Cite Simulator Code
+@dash.callback(
+    Output('card_display_cite', 'children'),
+    Input('card_cite_simulator', 'n_clicks'),
+    Input('card_cite_showcase', 'n_clicks'),
+    Input('card_cite_simulator_code', 'n_clicks'),
+    Input('card_cite_attributes', 'n_clicks')
+)
+def return_cite_simulator_code(card_cite_simulator, card_cite_showcase,
+                            card_cite_simulator_code, card_cite_attributes):
+    if card_cite_simulator % 2 == 0:
+        return cite_simulator_navbar
+    elif card_cite_showcase % 2 == 0:
+        return html.Div([
+            cite_navbar,
+            cite_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_cite')
+    elif card_cite_simulator_code % 2 == 0:
+        return html.Div([
+            cite_navbar,
+            cite_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_cite')
+    elif card_cite_attributes % 2 == 0:
+        return html.Div([
+            # cite_navbar,
+            global_attributes
+        ], id='card_display_cite')
+    else:
+        return dash.no_update
+# Card code html.Code Simulator Code
+@dash.callback(
+    Output('card_display_code', 'children'),
+    Input('card_code_simulator', 'n_clicks'),
+    Input('card_code_showcase', 'n_clicks'),
+    Input('card_code_simulator_code', 'n_clicks'),
+    Input('card_code_attributes', 'n_clicks')
+)
+def return_code_simulator_code(card_code_simulator, card_code_showcase,
+                            card_code_simulator_code, card_code_attributes):
+    if card_code_simulator % 2 == 0:
+        return code_simulator_navbar
+    elif card_code_showcase % 2 == 0:
+        return html.Div([
+            code_navbar,
+            code_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_code')
+    elif card_code_simulator_code % 2 == 0:
+        return html.Div([
+            code_navbar,
+            code_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_code')
+    elif card_code_attributes % 2 == 0:
+        return html.Div([
+            code_navbar,
+            global_attributes
+        ], id='card_display_code')
+    else:
+        return dash.no_update
+# Card col html.Col Simulator Code
+@dash.callback(
+    Output('card_display_col', 'children'),
+    Input('card_col_simulator', 'n_clicks'),
+    Input('card_col_showcase', 'n_clicks'),
+    Input('card_col_simulator_code', 'n_clicks'),
+    Input('card_col_attributes', 'n_clicks')
+)
+def return_c_simulator_code(card_col_simulator, card_col_showcase,
+                            card_col_simulator_code, card_col_attributes):
+    if card_col_simulator % 2 == 0:
+        return col_simulator_navbar
+    elif card_col_showcase % 2 == 0:
+        return html.Div([
+            col_navbar,
+            col_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_col')
+    elif card_col_simulator_code % 2 == 0:
+        return html.Div([
+            col_navbar,
+            col_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_col')
+    elif card_col_attributes % 2 == 0:
+        return html.Div([
+            col_navbar,
+            global_attributes
+        ], id='card_display_col')
+    else:
+        return dash.no_update
+# Card colgroup html.Colgroup Simulator Code
+@dash.callback(
+    Output('card_display_colgroup', 'children'),
+    Input('card_colgroup_simulator', 'n_clicks'),
+    Input('card_colgroup_showcase', 'n_clicks'),
+    Input('card_colgroup_simulator_code', 'n_clicks'),
+    Input('card_colgroup_attributes', 'n_clicks')
+)
+def return_colgroup_simulator_code(card_colgroup_simulator, card_colgroup_showcase,
+                            card_colgroup_simulator_code, card_colgroup_attributes):
+    if card_colgroup_simulator % 2 == 0:
+        return colgroup_simulator_navbar
+    elif card_colgroup_showcase % 2 == 0:
+        return html.Div([
+            colgroup_navbar,
+            colgroup_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_colgroup')
+    elif card_colgroup_simulator_code % 2 == 0:
+        return html.Div([
+            colgroup_navbar,
+            colgroup_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_colgroup')
+    elif card_colgroup_attributes % 2 == 0:
+        return html.Div([
+            colgroup_navbar,
+            global_attributes
+        ], id='card_display_colgroup')
+    else:
+        return dash.no_update
+# Card data html.Data Simulator Code
+@dash.callback(
+    Output('card_display_data', 'children'),
+    Input('card_data_simulator', 'n_clicks'),
+    Input('card_data_showcase', 'n_clicks'),
+    Input('card_data_simulator_code', 'n_clicks'),
+    Input('card_data_attributes', 'n_clicks')
+)
+def return_data_simulator_code(card_data_simulator, card_data_showcase,
+                            card_data_simulator_code, card_data_attributes):
+    if card_data_simulator % 2 == 0:
+        return data_simulator_navbar
+    elif card_data_showcase % 2 == 0:
+        return html.Div([
+            data_navbar,
+            data_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_data')
+    elif card_data_simulator_code % 2 == 0:
+        return html.Div([
+            data_navbar,
+            data_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_data')
+    elif card_data_attributes % 2 == 0:
+        return html.Div([
+            data_navbar,
+            global_attributes
+        ], id='card_display_data')
+    else:
+        return dash.no_update
+# Card datalist html.Datalist Simulator Code
+@dash.callback(
+    Output('card_display_datalist', 'children'),
+    Input('card_datalist_simulator', 'n_clicks'),
+    Input('card_datalist_showcase', 'n_clicks'),
+    Input('card_datalist_simulator_code', 'n_clicks'),
+    Input('card_datalist_attributes', 'n_clicks')
+)
+def return_datalist_simulator_code(card_datalist_simulator, card_datalist_showcase,
+                            card_datalist_simulator_code, card_datalist_attributes):
+    if card_datalist_simulator % 2 == 0:
+        return datalist_simulator_navbar
+    elif card_datalist_showcase % 2 == 0:
+        return html.Div([
+            datalist_navbar,
+            datalist_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_datalist')
+    elif card_datalist_simulator_code % 2 == 0:
+        return html.Div([
+            datalist_navbar,
+            datalist_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_datalist')
+    elif card_datalist_attributes % 2 == 0:
+        return html.Div([
+            datalist_navbar,
+            global_attributes
+        ], id='card_display_datalist')
+    else:
+        return dash.no_update
+# Card dd html.DD Simulator Code
+@dash.callback(
+    Output('card_display_dd', 'children'),
+    Input('card_dd_simulator', 'n_clicks'),
+    Input('card_dd_showcase', 'n_clicks'),
+    Input('card_dd_simulator_code', 'n_clicks'),
+    Input('card_dd_attributes', 'n_clicks')
+)
+def return_dd_simulator_code(card_dd_simulator, card_dd_showcase,
+                            card_dd_simulator_code, card_dd_attributes):
+    if card_dd_simulator % 2 == 0:
+        return dd_simulator_navbar
+    elif card_dd_showcase % 2 == 0:
+        return html.Div([
+            dd_navbar,
+            dd_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dd')
+    elif card_dd_simulator_code % 2 == 0:
+        return html.Div([
+            dd_navbar,
+            dd_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dd')
+    elif card_dd_attributes % 2 == 0:
+        return html.Div([
+            # dd_navbar,
+            global_attributes
+        ], id='card_display_dd')
+    else:
+        return dash.no_update
+# Card del html.Del Simulator Code
+@dash.callback(
+    Output('card_display_del', 'children'),
+    Input('card_del_simulator', 'n_clicks'),
+    Input('card_del_showcase', 'n_clicks'),
+    Input('card_del_simulator_code', 'n_clicks'),
+    Input('card_del_attributes', 'n_clicks')
+)
+def return_del_simulator_code(card_del_simulator, card_del_showcase,
+                            card_del_simulator_code, card_del_attributes):
+    if card_del_simulator % 2 == 0:
+        return del_simulator_navbar
+    elif card_del_showcase % 2 == 0:
+        return html.Div([
+            del_navbar,
+            del_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_del')
+    elif card_del_simulator_code % 2 == 0:
+        return html.Div([
+            del_navbar,
+            del_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_del')
+    elif card_del_attributes % 2 == 0:
+        return html.Div([
+            del_navbar,
+            global_attributes
+        ], id='card_display_del')
+    else:
+        return dash.no_update
+# Card details html.Details Simulator Code
+@dash.callback(
+    Output('card_display_details', 'children'),
+    Input('card_details_simulator', 'n_clicks'),
+    Input('card_details_showcase', 'n_clicks'),
+    Input('card_details_simulator_code', 'n_clicks'),
+    Input('card_details_attributes', 'n_clicks')
+)
+def return_details_simulator_code(card_details_simulator, card_details_showcase,
+                            card_details_simulator_code, card_details_attributes):
+    if card_details_simulator % 2 == 0:
+        return details_simulator_navbar
+    elif card_details_showcase % 2 == 0:
+        return html.Div([
+            details_navbar,
+            details_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_details')
+    elif card_details_simulator_code % 2 == 0:
+        return html.Div([
+            details_navbar,
+            details_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_details')
+    elif card_details_attributes % 2 == 0:
+        return html.Div([
+            details_navbar,
+            global_attributes
+        ], id='card_display_details')
+    else:
+        return dash.no_update
+# Card dfn html.Dfn Simulator Code
+@dash.callback(
+    Output('card_display_dfn', 'children'),
+    Input('card_dfn_simulator', 'n_clicks'),
+    Input('card_dfn_showcase', 'n_clicks'),
+    Input('card_dfn_simulator_code', 'n_clicks'),
+    Input('card_dfn_attributes', 'n_clicks')
+)
+def return_dfn_simulator_code(card_dfn_simulator, card_dfn_showcase,
+                            card_dfn_simulator_code, card_dfn_attributes):
+    if card_dfn_simulator % 2 == 0:
+        return dfn_simulator_navbar
+    elif card_dfn_showcase % 2 == 0:
+        return html.Div([
+            dfn_navbar,
+            dfn_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dfn')
+    elif card_dfn_simulator_code % 2 == 0:
+        return html.Div([
+            dfn_navbar,
+            dfn_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dfn')
+    elif card_dfn_attributes % 2 == 0:
+        return html.Div([
+            dfn_navbar,
+            global_attributes
+        ], id='card_display_dfn')
+    else:
+        return dash.no_update
+# Card dialog html.Dialog Simulator Code
+@dash.callback(
+    Output('card_display_dialog', 'children'),
+    Input('card_dialog_simulator', 'n_clicks'),
+    Input('card_dialog_showcase', 'n_clicks'),
+    Input('card_dialog_simulator_code', 'n_clicks'),
+    Input('card_dialog_attributes', 'n_clicks')
+)
+def return_dialog_simulator_code(card_dialog_simulator, card_dialog_showcase,
+                            card_dialog_simulator_code, card_dialog_attributes):
+    if card_dialog_simulator % 2 == 0:
+        return dialog_simulator_navbar
+    elif card_dialog_showcase % 2 == 0:
+        return html.Div([
+            dialog_navbar,
+            dialog_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dialog')
+    elif card_dialog_simulator_code % 2 == 0:
+        return html.Div([
+            dialog_navbar,
+            dialog_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dialog')
+    elif card_dialog_attributes % 2 == 0:
+        return html.Div([
+            dialog_navbar,
+            global_attributes
+        ], id='card_display_dialog')
+    else:
+        return dash.no_update
+# Card dir html.Dir Simulator Code
+@dash.callback(
+    Output('card_display_dir', 'children'),
+    Input('card_dir_simulator', 'n_clicks'),
+    Input('card_dir_showcase', 'n_clicks'),
+    Input('card_dir_simulator_code', 'n_clicks'),
+    Input('card_dir_attributes', 'n_clicks')
+)
+def return_dir_simulator_code(card_dir_simulator, card_dir_showcase,
+                            card_dir_simulator_code, card_dir_attributes):
+    if card_dir_simulator % 2 == 0:
+        return dialog_simulator_navbar
+    elif card_dir_showcase % 2 == 0:
+        return html.Div([
+            dir_navbar,
+            dir_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dir')
+    elif card_dir_simulator_code % 2 == 0:
+        return html.Div([
+            dir_navbar,
+            dir_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dir')
+    elif card_dir_attributes % 2 == 0:
+        return html.Div([
+            dir_navbar,
+            global_attributes
+        ], id='card_display_dir')
+    else:
+        return dash.no_update
+# Card div html.Div Simulator Code
+@dash.callback(
+    Output('card_display_div', 'children'),
+    Input('card_div_simulator', 'n_clicks'),
+    Input('card_div_showcase', 'n_clicks'),
+    Input('card_div_simulator_code', 'n_clicks'),
+    Input('card_div_attributes', 'n_clicks')
+)
+def return_div_simulator_code(card_div_simulator, card_div_showcase,
+                            card_div_simulator_code, card_div_attributes):
+    if card_div_simulator % 2 == 0:
+        return div_simulator_navbar
+    elif card_div_showcase % 2 == 0:
+        return html.Div([
+            div_navbar,
+            div_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_div')
+    elif card_div_simulator_code % 2 == 0:
+        return html.Div([
+            div_navbar,
+            div_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_div')
+    elif card_div_attributes % 2 == 0:
+        return html.Div([
+            div_navbar,
+            global_attributes
+        ], id='card_display_div')
+    else:
+        return dash.no_update
+# Card dl html.Dl Simulator Code
+@dash.callback(
+    Output('card_display_dl', 'children'),
+    Input('card_dl_simulator', 'n_clicks'),
+    Input('card_dl_showcase', 'n_clicks'),
+    Input('card_dl_simulator_code', 'n_clicks'),
+    Input('card_dl_attributes', 'n_clicks')
+)
+def return_dl_simulator_code(card_dl_simulator, card_dl_showcase,
+                            card_dl_simulator_code, card_dl_attributes):
+    if card_dl_simulator % 2 == 0:
+        return dl_simulator_navbar
+    elif card_dl_showcase % 2 == 0:
+        return html.Div([
+            dl_navbar,
+            dl_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dl')
+    elif card_dl_simulator_code % 2 == 0:
+        return html.Div([
+            dl_navbar,
+            dl_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dl')
+    elif card_dl_attributes % 2 == 0:
+        return html.Div([
+            dl_navbar,
+            global_attributes
+        ], id='card_display_dl')
+    else:
+        return dash.no_update
+# Card dt html.Dt Simulator Code
+@dash.callback(
+    Output('card_display_dt', 'children'),
+    Input('card_dt_simulator', 'n_clicks'),
+    Input('card_dt_showcase', 'n_clicks'),
+    Input('card_dt_simulator_code', 'n_clicks'),
+    Input('card_dt_attributes', 'n_clicks')
+)
+def return_dt_simulator_code(card_dt_simulator, card_dt_showcase,
+                            card_dt_simulator_code, card_dt_attributes):
+    if card_dt_simulator % 2 == 0:
+        return dt_simulator_navbar
+    elif card_dt_showcase % 2 == 0:
+        return html.Div([
+            dt_navbar,
+            dt_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dt')
+    elif card_dt_simulator_code % 2 == 0:
+        return html.Div([
+            dt_navbar,
+            dt_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_dt')
+    elif card_dt_attributes % 2 == 0:
+        return html.Div([
+            # dt_navbar,
+            global_attributes
+        ], id='card_display_dt')
+    else:
+        return dash.no_update
+# Card em html.Em Simulator Code
+@dash.callback(
+    Output('card_display_em', 'children'),
+    Input('card_em_simulator', 'n_clicks'),
+    Input('card_em_showcase', 'n_clicks'),
+    Input('card_em_simulator_code', 'n_clicks'),
+    Input('card_em_attributes', 'n_clicks')
+)
+def return_em_simulator_code(card_em_simulator, card_em_showcase,
+                            card_em_simulator_code, card_em_attributes):
+    if card_em_simulator % 2 == 0:
+        return em_simulator_navbar
+    elif card_em_showcase % 2 == 0:
+        return html.Div([
+            em_navbar,
+            em_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_em')
+    elif card_em_simulator_code % 2 == 0:
+        return html.Div([
+            em_navbar,
+            em_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_em')
+    elif card_em_attributes % 2 == 0:
+        return html.Div([
+            em_navbar,
+            global_attributes
+        ], id='card_display_em')
+    else:
+        return dash.no_update
+# Card embed html.Embed Simulator Code
+@dash.callback(
+    Output('card_display_embed', 'children'),
+    Input('card_embed_simulator', 'n_clicks'),
+    Input('card_embed_showcase', 'n_clicks'),
+    Input('card_embed_simulator_code', 'n_clicks'),
+    Input('card_embed_attributes', 'n_clicks')
+)
+def return_embed_simulator_code(card_embed_simulator, card_embed_showcase,
+                            card_embed_simulator_code, card_embed_attributes):
+    if card_embed_simulator % 2 == 0:
+        return embed_simulator_navbar
+    elif card_embed_showcase % 2 == 0:
+        return html.Div([
+            embed_navbar,
+            embed_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_embed')
+    elif card_embed_simulator_code % 2 == 0:
+        return html.Div([
+            embed_navbar,
+            embed_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_embed')
+    elif card_embed_attributes % 2 == 0:
+        return html.Div([
+            embed_navbar,
+            global_attributes
+        ], id='card_display_embed')
+    else:
+        return dash.no_update
+# Card fieldset html.Fieldset Simulator Code
+@dash.callback(
+    Output('card_display_fieldset', 'children'),
+    Input('card_fieldset_simulator', 'n_clicks'),
+    Input('card_fieldset_showcase', 'n_clicks'),
+    Input('card_fieldset_simulator_code', 'n_clicks'),
+    Input('card_fieldset_attributes', 'n_clicks')
+)
+def return_fieldset_simulator_code(card_fieldset_simulator, card_fieldset_showcase,
+                            card_fieldset_simulator_code, card_fieldset_attributes):
+    if card_fieldset_simulator % 2 == 0:
+        return fieldset_simulator_navbar
+    elif card_fieldset_showcase % 2 == 0:
+        return html.Div([
+            fieldset_navbar,
+            fieldset_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_fieldset')
+    elif card_fieldset_simulator_code % 2 == 0:
+        return html.Div([
+            fieldset_navbar,
+            fieldset_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_fieldset')
+    elif card_fieldset_attributes % 2 == 0:
+        return html.Div([
+            fieldset_navbar,
+            global_attributes
+        ], id='card_display_fieldset')
+    else:
+        return dash.no_update
+# Card figcaption html.Figcaption Simulator Code
+@dash.callback(
+    Output('card_display_figcaption', 'children'),
+    Input('card_figcaption_simulator', 'n_clicks'),
+    Input('card_figcaption_showcase', 'n_clicks'),
+    Input('card_figcaption_simulator_code', 'n_clicks'),
+    Input('card_figcaption_attributes', 'n_clicks')
+)
+def return_figcaption_simulator_code(card_figcaption_simulator, card_figcaption_showcase,
+                            card_figcaption_simulator_code, card_figcaption_attributes):
+    if card_figcaption_simulator % 2 == 0:
+        return figcaption_simulator_navbar
+    elif card_figcaption_showcase % 2 == 0:
+        return html.Div([
+            figcaption_navbar,
+            figcaption_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_figcaption')
+    elif card_figcaption_simulator_code % 2 == 0:
+        return html.Div([
+            figcaption_navbar,
+            figcaption_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_figcaption')
+    elif card_figcaption_attributes % 2 == 0:
+        return html.Div([
+            figcaption_navbar,
+            global_attributes
+        ], id='card_display_figcaption')
+    else:
+        return dash.no_update
+# Card figure html.Figure Simulator Code
+@dash.callback(
+    Output('card_display_figure', 'children'),
+    Input('card_figure_simulator', 'n_clicks'),
+    Input('card_figure_showcase', 'n_clicks'),
+    Input('card_figure_simulator_code', 'n_clicks'),
+    Input('card_figure_attributes', 'n_clicks')
+)
+def return_figure_simulator_code(card_figure_simulator, card_figure_showcase,
+                            card_figure_simulator_code, card_figure_attributes):
+    if card_figure_simulator % 2 == 0:
+        return figure_simulator_navbar
+    elif card_figure_showcase % 2 == 0:
+        return html.Div([
+            figure_navbar,
+            figure_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_figure')
+    elif card_figure_simulator_code % 2 == 0:
+        return html.Div([
+            figure_navbar,
+            figure_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_figure')
+    elif card_figure_attributes % 2 == 0:
+        return html.Div([
+            figure_navbar,
+            global_attributes
+        ], id='card_display_figure')
+    else:
+        return dash.no_update
+# Card font html.Font Simulator Code
+@dash.callback(
+    Output('card_display_font', 'children'),
+    Input('card_font_simulator', 'n_clicks'),
+    Input('card_font_showcase', 'n_clicks'),
+    Input('card_font_simulator_code', 'n_clicks'),
+    Input('card_font_attributes', 'n_clicks')
+)
+def return_font_simulator_code(card_font_simulator, card_font_showcase,
+                            card_font_simulator_code, card_font_attributes):
+    if card_font_simulator % 2 == 0:
+        return font_simulator_navbar
+    elif card_font_showcase % 2 == 0:
+        return html.Div([
+            font_navbar,
+            font_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_font')
+    elif card_font_simulator_code % 2 == 0:
+        return html.Div([
+            font_navbar,
+            font_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_font')
+    elif card_font_attributes % 2 == 0:
+        return html.Div([
+            font_navbar,
+            global_attributes
+        ], id='card_display_font')
+    else:
+        return dash.no_update
+# Card frameset html.Frameset Simulator Code
+@dash.callback(
+    Output('card_display_frameset', 'children'),
+    Input('card_frameset_simulator', 'n_clicks'),
+    Input('card_frameset_showcase', 'n_clicks'),
+    Input('card_frameset_simulator_code', 'n_clicks'),
+    Input('card_frameset_attributes', 'n_clicks')
+)
+def return_frameset_simulator_code(card_frameset_simulator, card_frameset_showcase,
+                            card_frameset_simulator_code, card_frameset_attributes):
+    if card_frameset_simulator % 2 == 0:
+        return frameset_simulator_navbar
+    elif card_frameset_showcase % 2 == 0:
+        return html.Div([
+            frameset_navbar,
+            frameset_showcase
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_frameset')
+    elif card_frameset_simulator_code % 2 == 0:
+        return html.Div([
+            frameset_navbar,
+            frameset_example_code
+        ], style={'margin': 0,
+                  'padding': 0}, id='card_display_frameset')
+    elif card_frameset_attributes % 2 == 0:
+        return html.Div([
+            frameset_navbar,
+            global_attributes
+        ], id='card_display_frameset')
+    else:
+        return dash.no_update
 # # Card h1 html.H1 Simulator Code
 # @dash.callback(
 #     Output('card_display_h1', 'children'),

@@ -172,7 +172,7 @@ a_simulator_navbar = html.Div(
                         [
                             dmc.Container(
                                 [
-                                    dmc.Title("Custom html.A() Simulator", order=2),
+                                    dmc.Title("html.A()", order=2),
                                     html.Div(
                                         [
                                             html.Label(
@@ -328,7 +328,7 @@ from dash import Dash, html, dcc, callback, Input, Output, State
 
 html.Div([
    dmc.Container([
-       dmc.Title("Custom html.A() Simulator",
+       dmc.Title("html.A() Simulator",
                  order=2),
        html.Div([
            html.Label(

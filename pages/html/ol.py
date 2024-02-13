@@ -3,8 +3,8 @@ import dash_mantine_components as dmc
 from dash_iconify import DashIconify
 import dash_bootstrap_components as dbc
 
-# Base Navbar
-a_navbar = dmc.MantineProvider(
+# Base ol Navbar
+ol_navbar = dmc.MantineProvider(
     theme={"colorScheme": "dark"},
     children=[
         dmc.Paper(
@@ -87,8 +87,8 @@ a_navbar = dmc.MantineProvider(
     ],
 )
 
-a_simulator_navbar = html.Div(
-    # A Simulator
+ol_simulator_navbar = html.Div(
+    # ol Simulator
     dmc.MantineProvider(
         theme={"colorScheme": "dark"},
         children=[
@@ -108,7 +108,7 @@ a_simulator_navbar = html.Div(
                                             width=30,
                                         ),
                                         variant="transparent",
-                                        id="card_a_simulator",
+                                        id="card_ol_simulator",
                                         n_clicks=1,
                                     )
                                 ],
@@ -125,7 +125,7 @@ a_simulator_navbar = html.Div(
                                         ),
                                         color="blue",
                                         variant="transparent",
-                                        id="card_a_showcase",
+                                        id="card_ol_showcase",
                                         n_clicks=1,
                                     ),
                                 ],
@@ -142,7 +142,7 @@ a_simulator_navbar = html.Div(
                                         ),
                                         color="blue",
                                         variant="transparent",
-                                        id="card_a_simulator_code",
+                                        id="card_ol_simulator_code",
                                         n_clicks=1,
                                     ),
                                 ],
@@ -158,7 +158,7 @@ a_simulator_navbar = html.Div(
                                             width=30,
                                         ),
                                         variant="transparent",
-                                        id="card_a_attributes",
+                                        id="card_ol_attributes",
                                         n_clicks=1,
                                     ),
                                 ],
@@ -230,12 +230,12 @@ a_simulator_navbar = html.Div(
             ),
         ],
     ),
-    id="card_display_a",
+    id="card_display_ol",
 )
 
-a_showcase = html.Div(
+ol_showcase = html.Div(
     [
-        a_navbar,
+        ol_navbar,
         html.Div(
             [
                 html.Div(
@@ -316,10 +316,10 @@ html.A("A Tag Homepage #",
         ),
     ],
     style={"margin": 0, "padding": 0},
-    id="card_display_a",
+    id="card_display_ol",
 )
 
-a_example_code = html.Div(
+ol_example_code = html.Div(
     [
         dmc.Prism(
             """# Dash html.A() Simulator
@@ -384,7 +384,7 @@ html.Div([
     },
 )
 
-a_attributes = html.Div(
+ol_attributes = html.Div(
     [
         dmc.Prism(
             """
